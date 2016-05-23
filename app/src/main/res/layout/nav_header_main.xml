@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
+    android:background="@drawable/backgroung_drawer"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,11 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:baselineAligned="false"
-    android:foreground="@drawable/pattern_drawer"
-    android:foregroundGravity="clip_horizontal|clip_vertical"
-    android:foregroundTint="#ffffff"
     android:visibility="visible"
-    android:foregroundTintMode="multiply">
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,5 +21,6 @@
         android:text="P3KU"
         android:id="@+id/textView"
         android:textSize="30dp" />
+
 
 </LinearLayout>
