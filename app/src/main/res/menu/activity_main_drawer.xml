@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single" android:id="@+id/menu_top">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:id="@+id/nav_pertolongan"
+            android:icon="@drawable/pertolongan_pertama"
             android:title="Pertolongan Pertama" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/pemeriksaan_penderita"
             android:title="Pemeriksaan Penderita" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/teknik_penanganan"
             android:title="Teknik Penanganan" />
     </group>
-
-    <item android:title="">
-        <menu>
+    <group android:checkableBehavior="single" android:id="@+id/menu_bottom">
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/tutorial_p3ku"
                 android:title="Tutorial P3KU" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/info_lainnya"
                 android:title="Informasi Lainnya" />
-        </menu>
-    </item>
-
+    </group>
 </menu>
