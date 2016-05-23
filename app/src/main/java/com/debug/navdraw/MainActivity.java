@@ -1,10 +1,10 @@
 package com.debug.navdraw;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,13 +15,23 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    public static FragmentTransaction ft;
+    public static FragmentManager fm;
+    Intent intent;
+    public static boolean IsPageHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        fm = getSupportFragmentManager();
+        //init fragment
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new page_menu_activity());
+        ft.commit();
+        IsPageHome=true;
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +58,18 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+                if (!IsPageHome) {
+
+                    ft = fm.beginTransaction();
+                    ft.replace(R.id.ux_content, new page_menu_activity());
+                    ft.commit();
+                    IsPageHome = true;
+                    getSupportActionBar().setTitle("P3KU");
+                    // yang belom itu cm ngilangin highlight ke beranda,,, daku dk ketmu carana .-.
+                }
+                else{
+                    super.onBackPressed();
+                }
         }
     }
 
@@ -96,4 +117,11 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    //public void asma_page_open(View view) {
+        //buka intent asma
+      //  Intent intent = new Intent(MainActivity.this, asma_page.class);
+        //startActivity(intent);
+
+    //}
 }
