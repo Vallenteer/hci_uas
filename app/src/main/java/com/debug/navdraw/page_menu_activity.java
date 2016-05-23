@@ -53,7 +53,7 @@ public class page_menu_activity extends Fragment {
             });
         }
 
-        ((MainActivity)getActivity()).getSupportActionBar().setTitle("P3KU");
+        ((MainActivity)getActivity()).getSupportActionBar().setTitle("Pertolongan pertama");
         return view;
     }
 }

@@ -13,7 +13,7 @@ public class asma_page extends Fragment {
                              Bundle savedInstanceState) {
         // Defines the xml file for the fragment
         View view = inflater.inflate(R.layout.activity_asma_page, container, false);
-        ((MainActivity)getActivity()).getSupportActionBar().setTitle("Asma");
+        //((MainActivity)getActivity()).getSupportActionBar().setTitle("Pertolongan pertama");
         MainActivity.IsPageHome=false;
         return  view;
     }
