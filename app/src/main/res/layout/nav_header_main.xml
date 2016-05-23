@@ -13,7 +13,9 @@
     android:baselineAligned="false"
     android:foreground="@drawable/pattern_drawer"
     android:foregroundGravity="clip_horizontal|clip_vertical"
-    android:foregroundTint="#6cffffff">
+    android:foregroundTint="#ffffff"
+    android:visibility="visible"
+    android:foregroundTintMode="multiply">
 
     <TextView
         android:layout_width="wrap_content"
