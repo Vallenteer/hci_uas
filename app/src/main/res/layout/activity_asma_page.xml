@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="0dp"
     android:paddingTop="0dp"
-    android:paddingBottom="0dp">
+    android:paddingBottom="0dp"
+    >
 
     <!--<android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -44,7 +45,7 @@
 
         <ExpandableListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/lvExp"
             android:paddingTop="200dp">
 

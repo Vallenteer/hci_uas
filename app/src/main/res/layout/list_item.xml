@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="55dip"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_marginLeft="10dp">
+
+
+    <ImageView
+        android:id="@+id/gambar_angka"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/angka_satu"/>
 
     <TextView
-        android:id="@+id/lblListItem"
-        android:layout_width="fill_parent"
+        android:id="@+id/isi_list"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17dip"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+        android:textSize="15dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/gambar_angka"
+        />
+
+
 
 </LinearLayout>
