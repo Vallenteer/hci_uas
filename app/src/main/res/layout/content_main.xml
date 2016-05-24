@@ -150,5 +150,17 @@
         android:background="@drawable/terkilir"
         android:layout_marginTop="30dp"
         />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/page_push"
+            android:layout_below="@id/page_terkilir"
+            android:layout_alignStart="@id/page_asma"
+            android:layout_alignLeft="@id/page_asma"
+            android:background="@drawable/terkilir"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"
+            />
     </RelativeLayout>
 </ScrollView>
