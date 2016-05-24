@@ -1,6 +1,12 @@
 package com.debug.navdraw;
 
+import android.media.Image;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import java.util.ArrayList;
+
+
 
 public class Group {
 
@@ -10,6 +16,8 @@ public class Group {
     public String getName() {
         return Name;
     }
+
+    private static class GroupHolder{ ImageView img; TextView Name; }
 
     public void setName(String name) {
         this.Name = name;

@@ -79,10 +79,17 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                     .getSystemService(context.LAYOUT_INFLATER_SERVICE);
             convertView = inf.inflate(R.layout.list_group, null);
         }
+
+
+
+        if (isExpanded){
+
+        }
         TextView tv = (TextView) convertView.findViewById(R.id.group_name);
         tv.setText(group.getName());
         return convertView;
     }
+
 
     @Override
     public boolean hasStableIds() {
@@ -93,5 +100,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int groupPosition, int childPosition) {
         return true;
     }
+
+
 
 }

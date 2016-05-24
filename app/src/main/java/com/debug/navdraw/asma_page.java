@@ -23,6 +23,9 @@ public class asma_page extends AppCompatActivity {
         ExpListItems = SetStandardGroups();
         ExpAdapter = new ExpandableListAdapter(asma_page.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
+
+
+
     }
 
 
@@ -33,8 +36,8 @@ public class asma_page extends AppCompatActivity {
         String country_names[] = { "Minta penderita untuk batuk. Jika belum berhasil bungkukkan penderita, tepuk punggung bagian", "Tepuk punggung",
         "Tabokin orangnya", "Jangan kasih ampun"};
 
-        int Images[] = { R.drawable.angka_satu, R.drawable.angka_satu,
-                R.drawable.angka_satu, R.drawable.angka_satu};
+        int Images[] = { R.drawable.icon_angka_satu, R.drawable.icon_angka_dua,
+                R.drawable.icon_angka_satu, R.drawable.icon_angka_dua};
 
         ArrayList<Group> list = new ArrayList<Group>();
 
