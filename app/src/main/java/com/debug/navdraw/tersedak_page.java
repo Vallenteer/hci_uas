@@ -6,7 +6,7 @@ import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
 
-public class asma_page extends AppCompatActivity {
+public class tersedak_page extends AppCompatActivity {
 
     private ExpandableListAdapter ExpAdapter;
     private ArrayList<Group> ExpListItems;
@@ -19,7 +19,7 @@ public class asma_page extends AppCompatActivity {
 
         ExpandList = (ExpandableListView) findViewById(R.id.lvExp);
         ExpListItems = SetStandardGroups();
-        ExpAdapter = new ExpandableListAdapter(asma_page.this, ExpListItems);
+        ExpAdapter = new ExpandableListAdapter(tersedak_page.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
 
 

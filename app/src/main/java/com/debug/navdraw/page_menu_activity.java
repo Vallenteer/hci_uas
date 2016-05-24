@@ -30,7 +30,7 @@ public class page_menu_activity extends Fragment {
          //   @Override
            // public void onClick(View v) {
              //   MainActivity.ft = MainActivity.fm.beginTransaction();
-               // MainActivity.ft.replace(R.id.ux_content, new asma_page(),"Asma");
+               // MainActivity.ft.replace(R.id.ux_content, new tersedak_page(),"Asma");
                 //MainActivity.ft.commit();
 
            // }
