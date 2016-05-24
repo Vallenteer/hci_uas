@@ -32,7 +32,7 @@
         android:id="@+id/testing"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Asma"
+        android:text="Tersedak"
         android:textSize="50sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

@@ -2,12 +2,10 @@ package com.debug.navdraw;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+
 public class asma_page extends AppCompatActivity {
 
     private ExpandableListAdapter ExpAdapter;
@@ -17,7 +15,7 @@ public class asma_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asma_page);
+        setContentView(R.layout.activity_tersedak_page);
 
         ExpandList = (ExpandableListView) findViewById(R.id.lvExp);
         ExpListItems = SetStandardGroups();

@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void asma_page_open(View view) {
+    public void tersedak_page_open(View view) {
         //buka intent asma
         Intent intent = new Intent(MainActivity.this, asma_page.class);
         startActivity(intent);

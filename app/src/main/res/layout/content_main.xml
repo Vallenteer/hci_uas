@@ -53,7 +53,8 @@
         android:background="@drawable/tersedak"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="tersedak_page_open"/>
 
     <Button
         android:layout_width="100dp"
@@ -105,7 +106,7 @@
         android:layout_toEndOf="@id/page_tersedak"
         android:layout_marginLeft="15dp"
         android:layout_marginStart="55dp"
-        android:onClick="asma_page_open" />
+         />
 
     <Button
         android:layout_width="100dp"
