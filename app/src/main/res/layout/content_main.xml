@@ -105,7 +105,7 @@
         android:layout_toEndOf="@id/page_tersedak"
         android:layout_marginLeft="15dp"
         android:layout_marginStart="55dp"
-         />
+        android:onClick="asma_page_open" />
 
     <Button
         android:layout_width="100dp"

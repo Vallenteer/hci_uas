@@ -23,19 +23,19 @@ public class page_menu_activity extends Fragment {
                              Bundle savedInstanceState) {
         // Defines the xml file for the fragment
         View view = inflater.inflate(R.layout.content_main, container, false);
-
+// kalau pindah fragment nanti kelvin yang atur
         // Setup handles to view objects here
-        button_asma_page = (Button) view.findViewById(R.id.page_asma);
-        button_asma_page.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MainActivity.ft = MainActivity.fm.beginTransaction();
-                MainActivity.ft.replace(R.id.ux_content, new asma_page(),"Asma");
-                MainActivity.ft.commit();
+     //   button_asma_page = (Button) view.findViewById(R.id.page_asma);
+       // button_asma_page.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+           // public void onClick(View v) {
+             //   MainActivity.ft = MainActivity.fm.beginTransaction();
+               // MainActivity.ft.replace(R.id.ux_content, new asma_page(),"Asma");
+                //MainActivity.ft.commit();
 
-            }
-        });
-
+           // }
+        //});
+// ampe sini
         //add button lain yang ga jelas (Richie)
         //Blame belleh for those id names
         //button_lain.add((Button) view.findViewById(R.id.page_menu_button_motor));
