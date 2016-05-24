@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tersedak_page"></activity>
+        <activity android:name=".tersedak_page" />
+        <activity android:name=".asma_page" />
+        <activity android:name=".gigitan_sengatan_page"></activity>
     </application>
 
 </manifest>

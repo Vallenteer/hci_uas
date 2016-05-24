@@ -120,8 +120,20 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void tersedak_page_open(View view) {
-        //buka intent asma
+        //buka intent tersedak
         Intent intent = new Intent(MainActivity.this, tersedak_page.class);
+        startActivity(intent);
+
+    }
+    public void asma_page_open(View view) {
+        //buka intent asma
+        Intent intent = new Intent(MainActivity.this, asma_page.class);
+        startActivity(intent);
+
+    }
+    public void gigitan_sengatan_page_open(View view) {
+        //buka intent gigitan
+        Intent intent = new Intent(MainActivity.this, gigitan_sengatan_page.class);
         startActivity(intent);
 
     }
