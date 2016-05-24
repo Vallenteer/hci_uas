@@ -137,4 +137,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
 
     }
+    public void tombol_darurat_page_open(View view) {
+        //buka intent tombol darurat
+        Intent intent = new Intent(MainActivity.this, tombol_darurat_page.class);
+        startActivity(intent);
+
+    }
 }

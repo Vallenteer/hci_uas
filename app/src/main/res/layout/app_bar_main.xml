@@ -37,6 +37,6 @@
         android:layout_gravity="bottom|center_horizontal"
         android:id="@+id/btn_darurat"
         android:background="@drawable/tombol_darurat"
-        />
+        android:onClick="tombol_darurat_page_open" />
 
 </android.support.design.widget.CoordinatorLayout>
