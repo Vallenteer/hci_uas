@@ -47,22 +47,26 @@ public class tersedak_page extends AppCompatActivity {
         for (String group_name : group_names) {
             Group gru = new Group();
             gru.setName(group_name);
-            if(group_name == "Orang Dewasa")
-            {
+
                 ch_list = new ArrayList<Child>();
+
                 for (; j < size; j++) {
+
+
                     Child ch = new Child();
                     ch.setName(country_names[j]);
                     ch.setImage(Images[j]);
                     ch_list.add(ch);
+
                 }
                 gru.setItems(ch_list);
-                list.add(gru);
 
-                size = size + 4;
+                list.add(gru);
             }
 
-        }
+                size = size + 4;
+
+
 
         return list;
     }
