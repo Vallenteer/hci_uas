@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
@@ -6,23 +7,6 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     >
-
-    <!--<android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/illustrasi_tersedak_banner"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </ScrollView>
-    </android.support.v7.widget.RecyclerView>-->
-
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -41,11 +25,13 @@
         android:gravity="bottom"
         android:layout_marginLeft="30dp" />
 
-
     <ListView
-        android:layout_width="match_parent"
+        android:id="@+id/listAsma"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listAsma">
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/testing">
+
     </ListView>
 
 </RelativeLayout>

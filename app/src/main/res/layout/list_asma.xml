@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:layout_height="match_parent" >
+    <TableRow>
+        <ImageView
+            android:id="@+id/id_angka_asma"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
 
-    <ImageView
-        android:id="@+id/img_angka_asma"
-        android:layout_gravity="center"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/icon_angka_satu" />
+        <TextView
+            android:id="@+id/tv_asma"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
 
-    <TextView
-        android:id="@+id/tv_Asma"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="TextView" />
-
-</LinearLayout>
+    </TableRow>
+</TableLayout>
