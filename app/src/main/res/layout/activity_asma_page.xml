@@ -42,13 +42,10 @@
         android:layout_marginLeft="30dp" />
 
 
-    <ExpandableListView
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/lvExp"
-        android:paddingTop="200dp"
-        android:groupIndicator="@null">
-
-    </ExpandableListView>
+        android:layout_height="wrap_content"
+        android:id="@+id/listAsma">
+    </ListView>
 
 </RelativeLayout>
