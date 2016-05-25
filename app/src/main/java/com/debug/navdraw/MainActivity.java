@@ -104,14 +104,33 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_pertolongan) {
             // Handle the camera action
+            IsPageHome=true;
+            ft = fm.beginTransaction();
+            ft.replace(R.id.ux_content, new page_menu_activity(),"Pertolongan pertama");
+            ft.commit();
+
+
         } else if (id == R.id.nav_pemeriksaan) {
-
+            IsPageHome=false;
+            ft = fm.beginTransaction();
+            ft.replace(R.id.ux_content, new pp_handler_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.commit();
         } else if (id == R.id.nav_teknik) {
-
+            IsPageHome=false;
+            ft = fm.beginTransaction();
+            ft.replace(R.id.ux_content, new tp_handler_activity(),"Teknik penanganan"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.commit();
         }  else if (id == R.id.nav_tutorial) {
+            IsPageHome=false;
+            ft = fm.beginTransaction();
+            ft.replace(R.id.ux_content, new tutorial_handler_activity(),"Tutorial P3KU"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.commit();
 
         } else if (id == R.id.nav_info) {
-
+            IsPageHome=false;
+            ft = fm.beginTransaction();
+            ft.replace(R.id.ux_content, new tentang_informasi_handler_activity(),"Informasi lainnya"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

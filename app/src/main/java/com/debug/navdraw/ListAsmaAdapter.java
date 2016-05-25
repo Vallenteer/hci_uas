@@ -1,5 +1,6 @@
 package com.debug.navdraw;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +17,7 @@ public class ListAsmaAdapter extends BaseAdapter{
     int [] imageId;
     private static LayoutInflater inflater=null;
 
-    public ListAsmaAdapter(MainActivity mainActivity, String[] prgmNameList, int[] prgmImages) {
+    public ListAsmaAdapter(Activity mainActivity, String[] prgmNameList, int[] prgmImages) {
         // TODO Auto-generated constructor stub
         result=prgmNameList;
         context=mainActivity;

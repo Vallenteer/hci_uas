@@ -38,11 +38,13 @@ public class page_menu_activity extends Fragment {
 // ampe sini
         //add button lain yang ga jelas (Richie)
         //Blame belleh for those id names
-        //button_lain.add((Button) view.findViewById(R.id.page_menu_button_motor));
-        //button_lain.add((Button) view.findViewById(R.id.button2));
-        //button_lain.add((Button) view.findViewById(R.id.button3));
-        //button_lain.add((Button) view.findViewById(R.id.button5));
-        //button_lain.add((Button) view.findViewById(R.id.button6));
+        button_lain.add((Button) view.findViewById(R.id.page_epilepsi));
+        button_lain.add((Button) view.findViewById(R.id.page_heatStroke));
+        button_lain.add((Button) view.findViewById(R.id.page_hipotermia));
+        button_lain.add((Button) view.findViewById(R.id.page_keracunan));
+        button_lain.add((Button) view.findViewById(R.id.page_patahTulang));
+        button_lain.add((Button) view.findViewById(R.id.page_terkilir));
+        button_lain.add((Button) view.findViewById(R.id.page_lukaBakar));
 
         for (Button buttons : button_lain) {
             buttons.setOnClickListener(new View.OnClickListener() {

@@ -1,27 +1,22 @@
 package com.debug.navdraw;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.ListActivity;
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.text.Html;
 import android.content.Context;
+import android.os.Bundle;
+import android.view.Menu;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class asma_page extends AppCompatActivity {
+public class asma_page extends Activity {
 
     ListView lv;
     Context context;
 
     ArrayList prgmName;
     public static int [] angkaImage={R.drawable.icon_angka_satu,R.drawable.icon_angka_dua,R.drawable.icon_angka_tiga};
-    public static String [] asmaText={"c++","JAVA","Jsp","Microsoft .Net","Android","PHP","Jquery","JavaScript"};
+    public static String[] asmaText={"c++","JAVA","Jsp"};
     TextView textView = (TextView) findViewById(R.id.tv_Asma);
 
 
@@ -33,8 +28,14 @@ public class asma_page extends AppCompatActivity {
         context=this;
 
         lv=(ListView) findViewById(R.id.listAsma);
-        lv.setAdapter(new ListAsmaAdapter(asma_page.this ,asmaText,angkaImage));
+        lv.setAdapter(new ListAsmaAdapter(this,asmaText,angkaImage));
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 
 }
