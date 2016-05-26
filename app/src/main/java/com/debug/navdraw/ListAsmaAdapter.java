@@ -1,6 +1,7 @@
 package com.debug.navdraw;
 
 import android.app.Activity;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,9 +29,9 @@ public class ListAsmaAdapter extends ArrayAdapter<String> {
         TextView txtTitle = (TextView) rowView.findViewById(R.id.tv_asma);
 
         ImageView imageView = (ImageView) rowView.findViewById(R.id.id_angka_asma);
-        txtTitle.setText(web[position]);
+        txtTitle.setText(Html.fromHtml(web[position]) );
 
         imageView.setImageResource(imageId[position]);
-        return rowView;
+        return  rowView;
     }
 }
