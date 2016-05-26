@@ -6,8 +6,9 @@ import android.widget.ListView;
 
 public class asma_page extends AppCompatActivity {
     ListView list;
+
     String[] web = {
-            "Google Plus",
+            "Google Plus  <b>\"This is an emergency\"</b> aaaaaaaaaaaaaaaaaaaaaaaa",
             "Twitter",
             "Windows"
 
@@ -23,7 +24,6 @@ public class asma_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asma_page);
-
 
         ListAsmaAdapter adapter = new ListAsmaAdapter(asma_page.this, web, imageId);
         list=(ListView)findViewById(R.id.listAsma);
