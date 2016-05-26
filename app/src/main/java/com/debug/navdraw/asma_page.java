@@ -7,9 +7,9 @@ import android.widget.ListView;
 public class asma_page extends AppCompatActivity {
     ListView list;
     String[] web = {
-            "Google Plus",
-            "Twitter",
-            "Windows"
+            "Bantulah Penderita untuk duduk pada posisi yang nyaman. Jangan biarkan penderita berbaring",
+            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya.",
+            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat."
 
     } ;
     Integer[] imageId = {
