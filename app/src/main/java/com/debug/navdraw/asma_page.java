@@ -8,9 +8,9 @@ public class asma_page extends AppCompatActivity {
     ListView list;
 
     String[] web = {
-            "Google Plus  <b>\"This is an emergency\"</b> aaaaaaaaaaaaaaaaaaaaaaaa",
-            "Twitter",
-            "Windows"
+            "Bantulah penderitauntuk duduk pada posisi yang nyaman.  <b>Jangan biarkan penderita berbaring</b>",
+            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya",
+            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat"
 
     } ;
     Integer[] imageId = {
