@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Boolean isFirstRun= getSharedPreferences("PREFERENCE",MODE_PRIVATE).getBoolean("isfirstrun",true);
+        if(isFirstRun){
+            Intent intent = new Intent(MainActivity.this, tutorial_page_0.class);
+            startActivity(intent);
+            getSharedPreferences("PREFERENCE",MODE_PRIVATE).edit().putBoolean("isfirstrun",false).commit();
+        }
+
+
         fm = getSupportFragmentManager();
         //init fragment
         ft = fm.beginTransaction();
