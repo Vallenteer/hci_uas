@@ -7,6 +7,7 @@ import android.widget.ListView;
 public class tp_dahu_page extends AppCompatActivity {
     ListView list;
     /// benerin tulisannya dan gambarnya dikosongin yang gk pke
+    // semua ini posisi gambar dkk diatur di list_tp
     String[] web = {
             "Bantulah penderitauntuk duduk pada posisi yang nyaman.  <b>Jangan biarkan penderita berbaring</b>",
             "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya",
