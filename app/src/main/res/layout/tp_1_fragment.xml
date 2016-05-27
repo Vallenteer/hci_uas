@@ -9,7 +9,8 @@
         android:orientation="vertical"
         android:divider="@drawable/vertical_divider"
         android:dividerPadding="5dip"
-        android:showDividers="middle">
+        android:showDividers="middle"
+        android:onClick="angkat_dagu_page_open">
         <ImageView
             android:id="@+id/icon_ldr"
             android:layout_marginTop="20dp"

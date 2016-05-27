@@ -162,4 +162,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
 
     }
+    public void angkat_dagu_page_open(View view) {
+
+        Intent intent = new Intent(MainActivity.this, tp_dahu_page.class);
+        startActivity(intent);
+
+    }
 }
