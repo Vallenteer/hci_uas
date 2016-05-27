@@ -26,17 +26,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb287763-1042-49dd-8cb3-df86f06924dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tp_lihat_dengar_page.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tp_resutasi_page.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tp_lihat_dengar_page.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tp_resutasi_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/ListTPAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/ListTPAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tp_dahu_page.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tp_dahu_page.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_dahu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_tp.xml" />
-    </list>
+    <list default="true" id="fb287763-1042-49dd-8cb3-df86f06924dd" name="Default" comment="" />
     <ignored path="P3KU-AndroidStudio.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
