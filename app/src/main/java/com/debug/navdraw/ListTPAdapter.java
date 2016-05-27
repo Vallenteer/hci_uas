@@ -16,7 +16,7 @@ public class ListTPAdapter extends ArrayAdapter<String> {
     private final Integer[] imageId;
     private final Integer[] imageId2;
     public ListTPAdapter(Activity context, String[] web, Integer[] imageId,Integer[] imageId2) {
-        super(context, R.layout.list_asma, web);
+        super(context, R.layout.list_tp, web);
 
         this.context = context;
         this.web = web;
@@ -26,7 +26,7 @@ public class ListTPAdapter extends ArrayAdapter<String> {
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View rowView= inflater.inflate(R.layout.list_dahu, null, true);
+        View rowView= inflater.inflate(R.layout.list_tp, null, true);
         TextView txtTitle = (TextView) rowView.findViewById(R.id.tv_dahu);
 
         ImageView imageView = (ImageView) rowView.findViewById(R.id.id_angka_dahu);

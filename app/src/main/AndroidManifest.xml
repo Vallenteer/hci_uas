@@ -23,7 +23,9 @@
         <activity android:name=".asma_page" />
         <activity android:name=".gigitan_sengatan_page" />
         <activity android:name=".tombol_darurat_page" />
-        <activity android:name=".tp_dahu_page"></activity>
+        <activity android:name=".tp_dahu_page" />
+        <activity android:name=".tp_lihat_dengar_page" />
+        <activity android:name=".tp_resutasi_page"></activity>
     </application>
 
 </manifest>

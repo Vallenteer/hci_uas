@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/illustrasi_lihatdengar_banner" />
+    <TextView
+        android:id="@+id/testing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat, dengar, rasakan"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp"
+        android:textColor="#ffffff"
+        android:gravity="bottom"
+        android:layout_marginLeft="30dp" />
+
+    <ListView
+        android:id="@+id/listview_lihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/testing">
+
+    </ListView>
+
+</RelativeLayout>
