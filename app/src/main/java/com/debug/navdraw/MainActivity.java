@@ -168,4 +168,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
 
     }
+    public void play_tutorial_open(View view) {
+
+        Intent intent = new Intent(MainActivity.this, tutorial_page_1.class);
+        startActivity(intent);
+
+    }
 }

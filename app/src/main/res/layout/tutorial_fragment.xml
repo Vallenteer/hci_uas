@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:id="@+id/airway1text"
+        android:text="Klik tombol dibawah ini untuk memutar ulang tutorial"
+        android:textSize="18sp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:layout_above="@+id/play_tutorial"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/play_tutorial"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_gravity="left"
+        android:background="@drawable/play_tutorial"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="play_tutorial_open" />
 
-</LinearLayout>
+</RelativeLayout>

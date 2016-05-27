@@ -25,7 +25,11 @@
         <activity android:name=".tombol_darurat_page" />
         <activity android:name=".tp_dahu_page" />
         <activity android:name=".tp_lihat_dengar_page" />
-        <activity android:name=".tp_resutasi_page"></activity>
+        <activity android:name=".tp_resutasi_page" />
+        <activity android:name=".tutorial_page_1" />
+        <activity android:name=".tutorial_page_2" />
+        <activity android:name=".tutorial_page_3" />
+        <activity android:name=".tutorial_page_4"></activity>
     </application>
 
 </manifest>
