@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="65dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/breathingText"
+        android:layout_gravity="center|center_horizontal"
+        android:paddingTop="30dp"
+        android:text="secondary survey"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:textColor="#FFAB40"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:paddingTop="5dp"
+        android:text="LANGKAH 4 / 4"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/breathingText"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView17" />
 
-</LinearLayout>
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/airway2text"
+        android:text="Apabila terdapat luka pada penderita?"
+        android:lines="2"
+        android:textSize="18sp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:layout_below="@+id/breathingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:lines="2"
+        android:text="Lebam dan pembengkakan juga termasuk luka"
+        android:id="@+id/textView12"
+        android:gravity="center|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp">
+        <Button
+            android:id="@+id/ss1Yes"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/ya_icon"
+            android:onClick="pp_ss1Yes_open" />
+        <Button
+            android:id="@+id/ss1No"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tidak_icon"
+            android:onClick="pp_ss1No_open" />
+    </LinearLayout>
+</RelativeLayout>
