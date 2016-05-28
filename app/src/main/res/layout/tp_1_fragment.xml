@@ -104,31 +104,32 @@
         android:layout_gravity="center"
         android:background="#E0E0E0"
         android:layout_below="@+id/relative3"
-        android:id="@id/garisSeparator1"/>
+        android:id="@+id/garisSeparator1"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/relative4"
-        android:layout_alignTop="@id/garisSeparator1"
+        android:layout_alignTop="@+id/garisSeparator1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
         <ImageView
             android:id="@+id/icon_rjp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="28dp"
-            android:layout_width="28dp"
+            android:layout_width="35dp"
             android:layout_height="35dp"
             android:background="@drawable/icon_jantung"/>
         <TextView
             android:layout_width="250dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="22dp"
             android:gravity="center|center_vertical|center_horizontal"
             android:layout_height="wrap_content"
             android:text="Restasi Jantung Paru (RJP)"
             android:textSize="18sp"
-            android:layout_alignLeft="@+id/icon_rjp" />
+            android:layout_alignLeft="@+id/icon_rjp"
+            android:layout_marginLeft="56dp" />
     </RelativeLayout>
 
 </RelativeLayout>
