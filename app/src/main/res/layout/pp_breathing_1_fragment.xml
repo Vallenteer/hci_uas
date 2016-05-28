@@ -73,7 +73,8 @@
             android:background="@drawable/info_hijau"
             android:layout_alignBottom="@+id/info_ldr"
             android:layout_alignRight="@+id/airway2text"
-            android:layout_alignEnd="@+id/airway2text" />
+            android:layout_alignEnd="@+id/airway2text"
+            android:onClick="pop_2_open" />
 
 
     <TextView

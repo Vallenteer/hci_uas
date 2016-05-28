@@ -48,6 +48,9 @@
         <activity android:name=".pop_up_dagu" android:theme="@style/myDialogTheme" >
 
         </activity>
+        <activity android:name=".pop_up_ldr" android:theme="@style/myDialogTheme" >
+
+        </activity>
     </application>
 
 </manifest>

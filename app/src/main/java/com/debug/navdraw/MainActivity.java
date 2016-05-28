@@ -288,7 +288,11 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(MainActivity.this, pop_up_dagu.class);
         startActivity(intent);
     }
-
+    public void pop_2_open  (View view) {
+        //open pop up 1 dagu
+        Intent intent = new Intent(MainActivity.this, pop_up_ldr.class);
+        startActivity(intent);
+    }
 
 
 }
