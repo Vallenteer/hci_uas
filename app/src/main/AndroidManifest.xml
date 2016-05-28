@@ -19,25 +19,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tersedak_page"
-            android:label="Pertolongan pertama"/>
-        <activity android:name=".asma_page"
-            android:label="Pertolongan pertama"/>
-        <activity android:name=".gigitan_sengatan_page"
-            android:label="Pertolongan pertama"/>
-        <activity android:name=".tombol_darurat_page"
-            android:label=""/>
-        <activity android:name=".tp_dahu_page"
+        <activity
+            android:name=".tersedak_page"
+            android:label="Pertolongan pertama" />
+        <activity
+            android:name=".asma_page"
+            android:label="Pertolongan pertama" />
+        <activity
+            android:name=".gigitan_sengatan_page"
+            android:label="Pertolongan pertama" />
+        <activity
+            android:name=".tombol_darurat_page"
+            android:label="" />
+        <activity
+            android:name=".tp_dahu_page"
             android:label="Teknik penanganan" />
-        <activity android:name=".tp_lihat_dengar_page"
+        <activity
+            android:name=".tp_lihat_dengar_page"
             android:label="Teknik penanganan" />
-        <activity android:name=".tp_resutasi_page"
+        <activity
+            android:name=".tp_resutasi_page"
             android:label="Teknik penanganan" />
         <activity android:name=".tutorial_page_1" />
         <activity android:name=".tutorial_page_2" />
         <activity android:name=".tutorial_page_3" />
         <activity android:name=".tutorial_page_4" />
-        <activity android:name=".tutorial_page_0"></activity>
+        <activity android:name=".tutorial_page_0" />
+        <activity android:name=".pop_up_dagu" android:theme="@style/myDialogTheme" >
+
+        </activity>
     </application>
 
 </manifest>

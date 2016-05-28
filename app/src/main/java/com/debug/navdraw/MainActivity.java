@@ -246,6 +246,12 @@ public class MainActivity extends AppCompatActivity
         ft.commit();
     }
 
+    public void pop_1_open  (View view) {
+        //open pop up 1 dagu
+        Intent intent = new Intent(MainActivity.this, pop_up_dagu.class);
+        startActivity(intent);
+    }
+
 
 
 }
