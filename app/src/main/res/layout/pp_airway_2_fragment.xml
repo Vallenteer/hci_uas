@@ -13,34 +13,42 @@
         android:textSize="30sp"
         android:textAllCaps="true"
         android:textColor="#FFAB40"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below = "@id/airwayText"
         android:layout_gravity="center|center_horizontal"
         android:paddingTop="5dp"
         android:text="LANGKAH 1 / 4"
         android:textSize="12sp"
         android:textAllCaps="true"
-        />
+        android:layout_below="@+id/airwayText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
 
     <TextView
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:id="@+id/airway2text"
         android:text="Apakah penderita berada dalam kondisi sadar?"
         android:textSize="18sp"
         android:gravity="center_vertical|center|center_horizontal"
         android:layout_gravity="center"
-        android:textColor="#000000" />
-    <RelativeLayout
+        android:textColor="#000000"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginTop="140dp"
-        android:gravity="bottom|center_horizontal">
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp">
         <Button
             android:id="@+id/airway2Yes"
             android:layout_width="80dp"
@@ -56,5 +64,5 @@
             android:layout_gravity="right"
             android:layout_marginLeft="10dp"
             android:background="@drawable/tidak_icon"/>
-    </RelativeLayout>
+    </LinearLayout>
 </RelativeLayout>

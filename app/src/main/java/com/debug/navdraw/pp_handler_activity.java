@@ -21,7 +21,7 @@ public class pp_handler_activity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Defines the xml file for the fragment
-        View view = inflater.inflate(R.layout.pp_airway_1_fragment, container, false);
+        View view = inflater.inflate(R.layout.pp_breathing_3_fragment, container, false);
 
         for (Button buttons : button_lain) {
             buttons.setOnClickListener(new View.OnClickListener() {
