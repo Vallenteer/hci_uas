@@ -104,14 +104,14 @@
         android:layout_gravity="center"
         android:background="#E0E0E0"
         android:layout_below="@+id/relative3"
-        android:id="@id/garisSeparator"/>
+        android:id="@id/garisSeparator1"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/relative4"
-        android:layout_alignTop="@id/garisSeparator"
+        android:layout_alignTop="@id/garisSeparator1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
         <ImageView
