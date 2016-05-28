@@ -281,8 +281,16 @@ public class MainActivity extends AppCompatActivity
         ft.replace(R.id.ux_content, new pp_ss_7_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
         ft.commit();
     }
-
-
+    public void resutasi_page_open  (View view) {
+        //open resutasi
+        Intent intent = new Intent(MainActivity.this, tp_resutasi_page.class);
+        startActivity(intent);
+    }
+    public void ldr_page_open  (View view) {
+        //open ldr
+        Intent intent = new Intent(MainActivity.this, tp_lihat_dengar_page.class);
+        startActivity(intent);
+    }
     public void pop_1_open  (View view) {
         //open pop up 1 dagu
         Intent intent = new Intent(MainActivity.this, pop_up_dagu.class);
