@@ -3,13 +3,13 @@
     android:id="@+id/image_dialog_root1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@android:color/transparent"
+    android:background="#7f000000"
     android:gravity = "center">
 
     <ImageView
         android:id="@+id/your_image1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src = "@drawable/illustrasi_gigitan_banner"/>
+        android:src = "@drawable/dialog_dagu"/>
 
 </FrameLayout>
