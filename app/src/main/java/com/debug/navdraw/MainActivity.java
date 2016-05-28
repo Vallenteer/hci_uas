@@ -246,6 +246,43 @@ public class MainActivity extends AppCompatActivity
         ft.commit();
     }
 
+    public void pp_ss1Yes_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_ss1No_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_ss2Yes_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_4_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_ss2No_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_5_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }public void pp_ss3Yes_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_6_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_ss3No_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_7_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+
+
     public void pop_1_open  (View view) {
         //open pop up 1 dagu
         Intent intent = new Intent(MainActivity.this, pop_up_dagu.class);

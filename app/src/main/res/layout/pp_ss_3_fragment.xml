@@ -79,6 +79,6 @@
             android:layout_gravity="right"
             android:layout_marginLeft="10dp"
             android:background="@drawable/tidak_icon"
-            android:onClick="pp_ss1\3No_open" />
+            android:onClick="pp_ss3No_open" />
     </LinearLayout>
 </RelativeLayout>
