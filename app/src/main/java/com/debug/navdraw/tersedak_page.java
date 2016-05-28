@@ -35,7 +35,7 @@ public class tersedak_page extends AppCompatActivity {
         "Minta penderita untuk batuk. Jika belum berhasil, bungkukkan penderita sehingga posisi kepala lebih rendah dari dada", "Tepuk punggung penderita sebanyak 5 kali sambil memeriksa apakah penderita sudah tidak lagi tersedak.", "Jika masih belum berhasil, berdirilah di belakang penderita dan lingkarkan kedua lengan anda ke pinggang penderita.", "Kepalkan salah satu tangan Anda di atas pusar penderita dan genggam erat kepalan dengan tangan yang lain.", "Tekan kuat ke dalam perut mengarah ke atas dengan cepat. Lakukan sambil memeriksa apakah penderita sudah tidak lagi tersedak. Jika tidak berhasil, segera hubungi fasilitas kesehatan terdekat.."};
 
         int Images[] = {
-                R.drawable.icon_angka_satu, R.drawable.icon_angka_dua, R.drawable.icon_angka_tiga, R.drawable.icon_angka_empat, R.drawable.icon_angka_lima};
+        R.drawable.icon_angka_satu, R.drawable.icon_angka_dua, R.drawable.icon_angka_tiga, R.drawable.icon_angka_empat, R.drawable.icon_angka_lima};
 
         ArrayList<Group> list = new ArrayList<Group>();
 
@@ -48,8 +48,13 @@ public class tersedak_page extends AppCompatActivity {
             Group gru = new Group();
             gru.setName(group_name);
 
-                ch_list = new ArrayList<Child>();
-
+            ch_list = new ArrayList<Child>();
+            if (group_name.equals("Bayi")) {
+                gru.setItems(ch_list);
+                list.add(gru);
+            }
+            else
+            {
                 for (; j < size; j++) {
 
 
@@ -63,8 +68,7 @@ public class tersedak_page extends AppCompatActivity {
 
                 list.add(gru);
             }
-
-                size = size + 4;
+        }
 
 
 
