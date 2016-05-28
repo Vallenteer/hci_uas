@@ -46,9 +46,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb287763-1042-49dd-8cb3-df86f06924dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_5_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_5_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_6_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_6_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_7_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_7_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tp_1_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tp_1_fragment.xml" />
     </list>
     <ignored path="P3KU-AndroidStudio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,89 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pp_ss_1_fragment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_1_fragment.xml">
+      <file leaf-file-name="tp_1_fragment.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tp_1_fragment.xml">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.653846">
-              <caret line="81" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp_ss_2_fragment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_2_fragment.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp_ss_3_fragment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_3_fragment.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp_ss_4_fragment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_4_fragment.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp_ss_5_fragment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_5_fragment.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8076923">
-              <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp_ss_6_fragment.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_6_fragment.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pp_ss_7_fragment.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_7_fragment.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.076923">
-              <caret line="120" column="17" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1783,7 +1703,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_tutorial_page_1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tutorial_page_1.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_2.xml" />
@@ -1834,6 +1753,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_5_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_7_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/pp_ss_6_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/tp_1_fragment.xml" />
       </list>
     </option>
   </component>
@@ -2279,22 +2199,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.490909">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tutorial_page_3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2680,17 +2584,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_1_fragment.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.653846">
-          <caret line="81" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_airway_4_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7846154">
@@ -2702,21 +2595,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_3_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_6_fragment.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_4_fragment.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="17" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -2735,10 +2617,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_6_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_4_fragment.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_3_fragment.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_1_fragment.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.653846">
+          <caret line="81" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -2748,8 +2652,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_ss_7_fragment.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.076923">
-          <caret line="120" column="17" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+        <state vertical-scroll-proportion="-6.923077">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="78" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tp_1_fragment.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
