@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity
     public void pp_airway2No_open (View view) {
         //open airway 4
         ft = fm.beginTransaction();
-        ft.replace(R.id.ux_content, new pp_airway_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.replace(R.id.ux_content, new pp_airway_4_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
         ft.commit();
     }
     public void pp_airway2Yes_open  (View view) {
@@ -208,8 +208,43 @@ public class MainActivity extends AppCompatActivity
         ft.replace(R.id.ux_content, new pp_airway_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
         ft.commit();
     }
+    public void pp_breathing1Yes_open  (View view) {
+        //open circu 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_circu_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_breathing1No_open  (View view) {
+        //open breathing 2
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_breathing_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
 
-
+    public void pp_breathing2Yes_open  (View view) {
+        //open bearthing 3
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_breathing_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_breathing2No_open  (View view) {
+        //open breathing 4
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_breathing_4_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_circu1Yes_open  (View view) {
+        //open circu 2
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_circu_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_circu1No_open  (View view) {
+        //open SS 1
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_ss_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
 
 
 

@@ -56,13 +56,15 @@
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="80dp"
-            android:background="@drawable/ya_icon"/>
+            android:background="@drawable/ya_icon"
+            android:onClick="pp_airway2Yes_open" />
         <Button
-            android:id="@+id/airway2No"
+            android:id="@+id/breathing1No"
             android:layout_width="80dp"
             android:layout_height="105dp"
             android:layout_gravity="right"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/tidak_icon"/>
+            android:background="@drawable/tidak_icon"
+            android:onClick="pp_airway2No_open" />
     </LinearLayout>
 </RelativeLayout>

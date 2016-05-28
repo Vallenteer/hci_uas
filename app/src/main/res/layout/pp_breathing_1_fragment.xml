@@ -26,7 +26,8 @@
         android:textAllCaps="true"
         android:layout_below="@+id/breathingText"
         android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:id="@+id/textView16" />
 
     <TextView
         android:layout_width="210dp"
@@ -37,27 +38,21 @@
         android:gravity="center_vertical|center|center_horizontal"
         android:layout_gravity="center"
         android:textColor="#000000"
-        android:layout_below="@+id/breathingText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignLeft="@+id/info_ldr"
+        android:layout_alignStart="@+id/info_ldr" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="39dp"
         android:text="Periksa dengan cara"
+        android:id="@+id/textView12"
         android:layout_below="@+id/airway2text"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView12" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout4">
+        android:layout_marginTop="32dp" />
+
         <TextView
             android:id="@+id/info_ldr"
             android:layout_gravity="center|center_horizontal|center_vertical"
@@ -67,15 +62,19 @@
             android:text="lihat, dengar, rasakan"
             android:textStyle="bold"
             android:textSize="15sp"
-            />
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp" />
         <Button
             android:id="@+id/buttonInfoLDR"
-            android:layout_marginLeft="10dp"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center|center_horizontal|center_vertical"
-            android:background="@drawable/info_hijau"/>
-    </LinearLayout>
+            android:background="@drawable/info_hijau"
+            android:layout_alignBottom="@+id/info_ldr"
+            android:layout_alignRight="@+id/airway2text"
+            android:layout_alignEnd="@+id/airway2text" />
+
 
     <TextView
         android:layout_width="195dp"
@@ -83,35 +82,34 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="Pernafasan normal tidak mengeluarkan suara, tidak tergesa-gesa dan tidak menyebabkan nyeri"
-        android:layout_marginTop="38dp"
         android:id="@+id/textView13"
-        android:layout_below="@+id/linearLayout4"
-        android:layout_centerHorizontal="true" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:gravity="bottom|center_horizontal"
-        android:id="@+id/linearLayout3"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/textView13"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/info_ldr"
+        android:layout_alignLeft="@+id/info_ldr"
+        android:layout_alignStart="@+id/info_ldr" />
+
+
         <Button
-            android:id="@+id/airway2Yes"
+            android:id="@+id/breathing1Yes"
             android:layout_width="80dp"
             android:layout_height="105dp"
             android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="80dp"
-            android:background="@drawable/ya_icon"/>
+            android:background="@drawable/ya_icon"
+            android:layout_alignTop="@+id/breathing1No"
+            android:layout_toLeftOf="@+id/textView16"
+            android:layout_toStartOf="@+id/textView16"
+            android:onClick="pp_breathing1Yes_open" />
         <Button
-            android:id="@+id/airway2No"
+            android:id="@+id/breathing1No"
             android:layout_width="80dp"
             android:layout_height="105dp"
             android:layout_gravity="right"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/tidak_icon"/>
-    </LinearLayout>
+            android:background="@drawable/tidak_icon"
+            android:layout_marginBottom="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12"
+            android:onClick="pp_breathing1No_open" />
+
 </RelativeLayout>
