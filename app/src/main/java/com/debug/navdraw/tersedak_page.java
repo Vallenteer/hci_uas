@@ -1,7 +1,9 @@
 package com.debug.navdraw;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
@@ -16,14 +18,13 @@ public class tersedak_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tersedak_page);
-
         ExpandList = (ExpandableListView) findViewById(R.id.lvExp);
         ExpListItems = SetStandardGroups();
         ExpAdapter = new ExpandableListAdapter(tersedak_page.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
-
-
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
 
@@ -75,4 +76,13 @@ public class tersedak_page extends AppCompatActivity {
         return list;
     }
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                    finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -1,7 +1,9 @@
 package com.debug.navdraw;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 public class asma_page extends AppCompatActivity {
@@ -25,10 +27,23 @@ public class asma_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asma_page);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         ListAsmaAdapter adapter = new ListAsmaAdapter(asma_page.this, web, imageId);
         list=(ListView)findViewById(R.id.listAsma);
         list.setAdapter(adapter);
 
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

@@ -1,13 +1,15 @@
 package com.debug.navdraw;
 
-import java.util.ArrayList;
 import android.content.Context;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
@@ -43,7 +45,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         TextView tv = (TextView) convertView.findViewById(R.id.isi_list);
         ImageView iv = (ImageView) convertView.findViewById(R.id.gambar_angka);
 
-        tv.setText(child.getName().toString());
+        tv.setText(Html.fromHtml(child.getName().toString()));
         iv.setImageResource(child.getImage());
 
         return convertView;
