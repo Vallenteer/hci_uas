@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_pemeriksaan) {
             IsPageHome=false;
             ft = fm.beginTransaction();
-            ft.replace(R.id.ux_content, new pp_handler_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
             ft.commit();
         } else if (id == R.id.nav_teknik) {
             IsPageHome=false;
@@ -182,4 +182,35 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
 
     }
+    public void pp_airway1No_open (View view) {
+        //open airway 2
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_airway_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+
+    public void pp_airway1Yes_open  (View view) {
+        //open breathing 1
+       ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_breathing_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+
+    public void pp_airway2No_open (View view) {
+        //open airway 4
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_airway_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+    public void pp_airway2Yes_open  (View view) {
+        //open airway 3
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_airway_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
+
+
+
+
+
 }
