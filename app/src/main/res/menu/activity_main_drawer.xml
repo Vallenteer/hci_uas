@@ -5,16 +5,16 @@
         <item
             android:id="@+id/nav_pertolongan"
             android:icon="@drawable/pertolongan_pertama"
-            android:title="Pertolongan Pertama" />
+            android:title="Pertolongan pertama" />
         <item
             android:id="@+id/nav_pemeriksaan"
             android:icon="@drawable/pemeriksaan_penderita"
-            android:title="Pemeriksaan Penderita" />
+            android:title="Pemeriksaan penderita" />
         <item
             android:id="@+id/nav_teknik"
             android:icon="@drawable/teknik_penanganan"
 
-            android:title="Teknik Penanganan" />
+            android:title="Teknik penanganan" />
     </group>
     <group android:checkableBehavior="single" android:id="@+id/menu_bottom">
             <item
@@ -24,6 +24,6 @@
             <item
                 android:id="@+id/nav_info"
                 android:icon="@drawable/info_lainnya"
-                android:title="Informasi Lainnya" />
+                android:title="Informasi lainnya" />
     </group>
 </menu>

@@ -6,6 +6,7 @@
     android:layout_margin="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
+    style="@style/whiteBG"
     >
 
     <!--<android.support.v7.widget.RecyclerView
