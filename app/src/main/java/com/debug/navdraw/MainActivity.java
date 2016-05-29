@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.search_setting) {
+            Intent intent = new Intent(MainActivity.this, search_function.class);
+            startActivity(intent);
             return true;
         }
 
