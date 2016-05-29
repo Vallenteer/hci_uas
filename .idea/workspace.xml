@@ -46,6 +46,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb287763-1042-49dd-8cb3-df86f06924dd" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/search_function.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_function.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_search.xml" />
@@ -55,6 +56,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tombol_darurat_page.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tombol_darurat_page.xml" />
+>>>>>>> origin/master
     </list>
     <ignored path="P3KU-AndroidStudio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,12 +83,26 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="tentang_informasi_fragment.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tentang_informasi_fragment.xml">
+<<<<<<< HEAD
+=======
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+>>>>>>> origin/master
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-7.418182">
               <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
@@ -93,6 +113,7 @@
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.6181818">
               <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
@@ -102,7 +123,30 @@
                 <element signature="e#350#385#0" expanded="true" />
                 <element signature="e#409#442#0" expanded="true" />
               </folding>
+=======
+        </entry>
+      </file>
+      <file leaf-file-name="tentang_informasi_handler_activity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tentang_informasi_handler_activity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_tombol_darurat_page.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tombol_darurat_page.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45132744">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+>>>>>>> origin/master
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -148,7 +192,11 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+=======
+              <caret line="56" column="29" selection-start-line="49" selection-start-column="8" selection-end-line="56" selection-end-column="29" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
@@ -1788,6 +1836,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tutorial_page_2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_3.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_4.xml" />
+>>>>>>> origin/master
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tutorial_page_3.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tutorial_page_4.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_0.xml" />
@@ -1833,12 +1887,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tp_1_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tentang_informasi_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tentang_informasi_handler_activity.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_search.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_search_function.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/asma_page.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/search_function.java" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tombol_darurat_page.xml" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -1873,6 +1931,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+>>>>>>> origin/master
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1894,6 +1958,7 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1912,6 +1977,8 @@
               <option name="myItemId" value="menu" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> origin/master
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1940,6 +2007,7 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
@@ -1972,13 +2040,18 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> origin/master
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane" />
+=======
+>>>>>>> origin/master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2294,8 +2367,13 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1331058" sideWeight="0.4924357" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1331058" sideWeight="0.5075643" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29419526" sideWeight="0.49253732" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29419526" sideWeight="0.5074627" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> origin/master
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.49701494" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.49402985" order="2" side_tool="false" content_ui="tabs" />
@@ -2337,6 +2415,57 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial_page_0.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.846154">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#272#305#0" expanded="true" />
+            <element signature="e#330#365#0" expanded="true" />
+            <element signature="e#391#426#0" expanded="true" />
+            <element signature="e#450#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tutorial_handler_activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pp_airway_1_fragment.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6923075">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/pp_airway_2_activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58082193">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/pp_airway_3_activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6054795">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> origin/master
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/pp_airway_4_activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6054795">
@@ -2668,8 +2797,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/ListTPAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.8717949">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="39" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
@@ -2685,6 +2819,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/tersedak_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2706,6 +2841,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.653847">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+=======
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
@@ -2728,9 +2866,14 @@
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.4.0/appcompat-v7-23.4.0-sources.jar!/android/support/v7/widget/ActionBarOverlayLayout.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.33070865">
           <caret line="390" column="0" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.8717949">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="39" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
@@ -2807,6 +2950,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/debug/navdraw/asma_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="47" column="0" selection-start-line="38" selection-start-column="4" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
@@ -2825,7 +2969,22 @@
             <element signature="e#4116#5189#0" expanded="true" />
             <element signature="e#5188#5189#0" expanded="true" />
           </folding>
+=======
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding />
+>>>>>>> origin/master
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tombol_darurat_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45132744">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
