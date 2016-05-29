@@ -1,6 +1,5 @@
 package com.debug.navdraw;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,13 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
-import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
-import android.widget.ExpandableListView;
-
-import java.util.ArrayList;
 
 import java.util.ArrayList;
 
@@ -45,9 +37,9 @@ public class tentang_informasi_handler_activity extends Fragment {
             });
         }
 
-        ExpandList = (ExpandableListView) findViewById(R.id.lvInfo);
+        ExpandList = (ExpandableListView) view.findViewById(R.id.lvInfo);
         ExpListItems = SetStandardGroups();
-        ExpAdapter = new ExpandableListAdapter(tentang_informasi_handler_activity.this, ExpListItems);
+        ExpAdapter = new ExpandableListAdapter(getActivity(), ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
 
         ((MainActivity)getActivity()).getSupportActionBar().setTitle("Informasi lainya");
@@ -56,19 +48,20 @@ public class tentang_informasi_handler_activity extends Fragment {
 
     public ArrayList<Group> SetStandardGroups() {
 
-        String group_names[] = {"Bayi", "Orang Dewasa"};
+        String group_names[] = {"Pada saat seperti apa pemeriksaan penderita dibutuhkan?", "Tentang P3KU"};
 
         String country_names[] = {
-                "Minta penderita untuk batuk. Jika belum berhasil, bungkukkan penderita sehingga posisi kepala lebih rendah dari dada", "Tepuk punggung penderita sebanyak 5 kali sambil memeriksa apakah penderita sudah tidak lagi tersedak.", "Jika masih belum berhasil, berdirilah di belakang penderita dan lingkarkan kedua lengan anda ke pinggang penderita.", "Kepalkan salah satu tangan Anda di atas pusar penderita dan genggam erat kepalan dengan tangan yang lain.", "Tekan kuat ke dalam perut mengarah ke atas dengan cepat. Lakukan sambil memeriksa apakah penderita sudah tidak lagi tersedak. Jika tidak berhasil, segera hubungi fasilitas kesehatan terdekat.."};
+                "Pemeriksaan penderita dapat digunakan untuk mengetahui kondisi yang sebenarnya dialami oleh penderita pada saat kita tidak mengetahui penyebab kondisi penderita tersebut",
+                "P3KU (Panduan Pertolongan PertamaKu) adalah sebuah aplikasi yang memberikan informasi tentang cara penanganan untuk berbagai macam keadaan darurat. Aplikasi P3KU dapat digunakan untuk mempelajari cara-cara penanganan dan juga dapat digunakan saat darurat untuk memeriksa penderita dan mencari pertolongan dari fasilitas kesehatan terdekat."};
 
         int Images[] = {
-                R.drawable.icon_angka_satu, R.drawable.icon_angka_dua, R.drawable.icon_angka_tiga, R.drawable.icon_angka_empat, R.drawable.icon_angka_lima};
+               0,0};
 
         ArrayList<Group> list = new ArrayList<Group>();
 
         ArrayList<Child> ch_list;
 
-        int size = 4;
+        int size = 1;
         int j = 0;
 
         for (String group_name : group_names) {
@@ -76,12 +69,6 @@ public class tentang_informasi_handler_activity extends Fragment {
             gru.setName(group_name);
 
             ch_list = new ArrayList<Child>();
-            if (group_name.equals("Bayi")) {
-                gru.setItems(ch_list);
-                list.add(gru);
-            }
-            else
-            {
                 for (; j < size; j++) {
 
 
@@ -94,7 +81,7 @@ public class tentang_informasi_handler_activity extends Fragment {
                 gru.setItems(ch_list);
 
                 list.add(gru);
-            }
+            size=size+1;
         }
 
 
