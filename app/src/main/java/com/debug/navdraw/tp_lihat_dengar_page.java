@@ -13,7 +13,7 @@ public class tp_lihat_dengar_page extends AppCompatActivity {
     /// benerin tulisannya dan gambarnya dikosongin yang gk pke
     // semua ini posisi gambar dkk diatur di list_tp
     String[] web = {
-            "<b>Lihat</b><br> Lihat apakah dada penderita jelas naik",
+            "<b>Lihat</b><br> Lihat apakah dada penderita jelas naik dan turun atau mengembang saat nafas",
             "<b>Dengar</b><br> Dengarkan apakah ada pernafasan dari hidung atau mulut penderita.",
             "<b>Rasakan</b><br> Rasakan apakah ada hembusan nafas terhadap sisi wajah Anda"
 
