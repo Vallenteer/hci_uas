@@ -15,23 +15,31 @@ public class tp_resutasi_page extends AppCompatActivity {
     /// benerin tulisannya dan gambarnya dikosongin yang gk pke
     // semua ini posisi gambar dkk diatur di list_tp
     String[] web = {
-            "baringkan.............",
-            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya",
-            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat"
-
+            "Baringkan penderita di atas permukaan yang datar dan keras. Berlututlah sejajar di sisi kiri atau kanan dengan dada penderita",
+            "Tumpuk kedua telapak tangan Anda secara sejajar mengarah pada lengan penderita dengan posisi panggung tangan berada di atas dan letakan pada bagian tengah dada penderita.",
+            "Lipat telapak tangan yang berada di atas mengarah ke bagian dalam telapak tangan dibawahnya.",
+            "Lakukan penekanan pada dada ke bawah sedalam 4-5 cm dengan tetap menjaga lengan Anda tetap tegak lurus, kemudia lepaskan tekanan.",
+            "Terus lakukan penekanan sambil menghitung untuk menjaga jeda waktu antara penekanan tetap konstan sampai bantuan tiba.",
+            ""
     } ;
     Integer[] imageId = {
             R.drawable.icon_angka_satu,
             R.drawable.icon_angka_dua,
-            R.drawable.icon_angka_tiga
+            R.drawable.icon_angka_tiga,
+            R.drawable.icon_angka_empat,
+            R.drawable.icon_angka_lima,
+            0
 
     };
     Button button_audio;
     boolean audio=true;
     Integer[] imageId2 = {
+            0,
             0,// 0 kalau gambar kosong
-            R.drawable.illustrasi_asma_banner,
-            0
+            R.drawable.illustrasi_jantung,
+            0,
+            0,
+            0,
 
     };
 

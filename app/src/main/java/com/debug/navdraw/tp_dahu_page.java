@@ -13,21 +13,21 @@ public class tp_dahu_page extends AppCompatActivity {
     /// benerin tulisannya dan gambarnya dikosongin yang gk pke
     // semua ini posisi gambar dkk diatur di list_tp
     String[] web = {
-            "Bantulah penderitauntuk duduk pada posisi yang nyaman.  <b>Jangan biarkan penderita berbaring</b>",
-            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya",
-            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat"
+            "Gunakan satu tangan Anda untuk menekan dahi penderita ke arah bawah.",
+            "Secara bersamaan ke arah atas secara perlahan dengan dua atau tiga jari tangan Anda yang lain.",
+            ""
 
     } ;
     Integer[] imageId = {
             R.drawable.icon_angka_satu,
             R.drawable.icon_angka_dua,
-            R.drawable.icon_angka_tiga
+            0
 
     };
 
     Integer[] imageId2 = {
             0,// 0 kalau gambar kosong
-            R.drawable.illustrasi_asma_banner,
+            R.drawable.illustrasi_dagu,
             0
 
     };

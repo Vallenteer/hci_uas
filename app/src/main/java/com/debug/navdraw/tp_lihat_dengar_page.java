@@ -13,9 +13,9 @@ public class tp_lihat_dengar_page extends AppCompatActivity {
     /// benerin tulisannya dan gambarnya dikosongin yang gk pke
     // semua ini posisi gambar dkk diatur di list_tp
     String[] web = {
-            "<b>Lihat</b><br> isi sendiri aja wkak",
-            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya",
-            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat"
+            "<b>Lihat</b><br> Lihat apakah dada penderita jelas naik",
+            "<b>Dengar</b><br> Dengarkan apakah ada pernafasan dari hidung atau mulut penderita.",
+            "<b>Rasakan</b><br> Rasakan apakah ada hembusan nafas terhadap sisi wajah Anda"
 
     } ;
     Integer[] imageId = {
@@ -26,8 +26,8 @@ public class tp_lihat_dengar_page extends AppCompatActivity {
     };
 
     Integer[] imageId2 = {
-            0,// 0 kalau gambar kosong
-            R.drawable.illustrasi_asma_banner,
+            R.drawable.illustrasi_ldr,// 0 kalau gambar kosong
+            0,
             0
 
     };
