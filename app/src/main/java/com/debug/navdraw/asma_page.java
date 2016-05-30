@@ -12,9 +12,9 @@ public class asma_page extends AppCompatActivity {
     ListView list;
 
     String[] web = {
-            "Bantulah penderitauntuk duduk pada posisi yang nyaman.  <b>Jangan biarkan penderita berbaring</b>",
-            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya",
-            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat"
+            "Bantulah penderita untuk duduk pada posisi yang nyaman.  <b>Jangan biarkan penderita berbaring.</b>",
+            "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya.",
+            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat."
 
     } ;
     Integer[] imageId = {

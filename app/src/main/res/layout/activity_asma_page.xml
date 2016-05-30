@@ -8,8 +8,8 @@
     android:paddingBottom="0dp"
     >
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="375dp"
+        android:layout_height="160dp"
         android:background="@drawable/illustrasi_asma_banner" />
     <TextView
         android:id="@+id/testing"
@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="90dp"
         android:textColor="#ffffff"
         android:gravity="bottom"
         android:layout_marginLeft="30dp" />
