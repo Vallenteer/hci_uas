@@ -1,8 +1,10 @@
 package com.debug.navdraw;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
@@ -33,7 +35,7 @@ public class tp_resutasi_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tp_lihat_dengar_page);
+        setContentView(R.layout.activity_tp_resutasi_page);
 
         ListTPAdapter adapter = new ListTPAdapter(tp_resutasi_page.this, web, imageId,imageId2);
         list=(ListView)findViewById(R.id.listview_resultasi);
@@ -50,6 +52,25 @@ public class tp_resutasi_page extends AppCompatActivity {
                 finish();
                 return true;
         }
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.search_setting) {
+            Intent intent = new Intent(tp_resutasi_page.this, search_function.class);
+            startActivity(intent);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 }
