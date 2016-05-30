@@ -26,6 +26,7 @@ public class gigitan_sengatan_page extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         ExpandList = (ExpandableListView) findViewById(R.id.lvExp);
+        ExpandList.setChildDivider(getResources().getDrawable(R.drawable.list_divider));
         ExpListItems = SetStandardGroups();
         ExpAdapter = new ExpandableListAdapter(gigitan_sengatan_page.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);

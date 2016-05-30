@@ -24,9 +24,11 @@ public class tersedak_page extends AppCompatActivity {
         ExpListItems = SetStandardGroups();
         ExpAdapter = new ExpandableListAdapter(tersedak_page.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
+        ExpandList.setChildDivider(getResources().getDrawable(R.drawable.list_divider));
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
+
     }
 
 
