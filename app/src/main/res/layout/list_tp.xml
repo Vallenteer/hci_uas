@@ -9,14 +9,14 @@
             android:layout_marginLeft="10dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="left|center_vertical"
+            android:layout_gravity="top|left|center_horizontal"
             />
         <RelativeLayout >
 
             <TextView
             android:id="@+id/tv_dahu"
             android:layout_marginLeft="5dp"
-            android:paddingTop="20dp"
+            android:paddingTop="0dp"
             android:paddingBottom="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="50dp"

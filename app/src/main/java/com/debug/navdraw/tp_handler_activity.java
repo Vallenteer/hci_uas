@@ -21,7 +21,8 @@ public class tp_handler_activity extends Fragment {
             "Lihat, dengar, rasakan",
             "Nafas Buatan",
             "Resutasi Jantung Paru (RJP)",
-            "Kontrol pendarahan"
+            "Kontrol pendarahan",
+            ""
 
     } ;
     Integer[] imageId = {
@@ -29,7 +30,8 @@ public class tp_handler_activity extends Fragment {
             R.drawable.icon_ldr,
             R.drawable.icon_nafas_buatan,
             R.drawable.icon_jantung,
-            R.drawable.icon_darah
+            R.drawable.icon_darah,
+            0
 
     };
 
