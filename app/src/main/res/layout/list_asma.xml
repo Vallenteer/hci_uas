@@ -10,14 +10,14 @@
             android:layout_marginTop="0dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="left|center"/>
+            android:layout_gravity="left"/>
 
         <TextView
             android:id="@+id/tv_asma"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:paddingTop="0dp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="15dp"
             android:paddingLeft="10dp"
             android:paddingRight="50dp"
             android:layout_width="300dp"
