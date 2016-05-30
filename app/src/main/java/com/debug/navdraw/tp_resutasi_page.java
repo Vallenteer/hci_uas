@@ -1,11 +1,13 @@
 package com.debug.navdraw;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class tp_resutasi_page extends AppCompatActivity {
@@ -24,7 +26,8 @@ public class tp_resutasi_page extends AppCompatActivity {
             R.drawable.icon_angka_tiga
 
     };
-
+    Button button_audio;
+    boolean audio=true;
     Integer[] imageId2 = {
             0,// 0 kalau gambar kosong
             R.drawable.illustrasi_asma_banner,
@@ -37,6 +40,7 @@ public class tp_resutasi_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tp_resutasi_page);
 
+        button_audio=(Button) findViewById(R.id.button_audio);
         ListTPAdapter adapter = new ListTPAdapter(tp_resutasi_page.this, web, imageId,imageId2);
         list=(ListView)findViewById(R.id.listview_resultasi);
         list.setAdapter(adapter);
@@ -66,7 +70,18 @@ public class tp_resutasi_page extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void audio_on  (View view) {
+        if(audio)
+        {
+            button_audio.setBackgroundResource(R.drawable.audio_on);
+            audio=false;
 
+        }
+        else {
+            button_audio.setBackgroundResource(R.drawable.audio_off);
+            audio=true;
+        }
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

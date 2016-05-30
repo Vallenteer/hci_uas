@@ -39,7 +39,7 @@ public class tp_handler_activity extends Fragment {
         // Defines the xml file for the fragment
         View view = inflater.inflate(R.layout.tp_1_fragment, container, false);
 
-        ListAsmaAdapter adapter = new ListAsmaAdapter(getActivity(), web, imageId);
+        ListTPHandlerAdapter adapter = new ListTPHandlerAdapter(getActivity(), web, imageId);
         list=(ListView)view.findViewById(R.id.listTP);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
