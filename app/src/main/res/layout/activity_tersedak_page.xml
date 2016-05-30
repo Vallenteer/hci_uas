@@ -8,6 +8,7 @@
     android:paddingBottom="0dp"
     >
 
+
     <!--<android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,6 +56,9 @@
             android:groupIndicator="@null">
 
         </ExpandableListView>
-
+    <include
+        layout="@layout/app_bar_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>
 

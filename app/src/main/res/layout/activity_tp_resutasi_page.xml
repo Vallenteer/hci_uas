@@ -51,5 +51,8 @@
         android:layout_marginEnd="24dp"
         android:paddingRight="10dp"
         android:onClick="audio_on" />
-
+    <include
+        layout="@layout/app_bar_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>
