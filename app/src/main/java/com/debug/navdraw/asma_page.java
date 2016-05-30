@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 
 public class asma_page extends AppCompatActivity {
@@ -68,5 +69,10 @@ public class asma_page extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    public void tombol_darurat_page_open(View view) {
+        //buka intent tombol darurat
+        Intent intent = new Intent(this, tombol_darurat_page.class);
+        startActivity(intent);
 
+    }
 }
