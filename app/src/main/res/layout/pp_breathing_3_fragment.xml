@@ -2,110 +2,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="65dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/breathingText"
-        android:layout_gravity="center|center_horizontal"
-        android:paddingTop="30dp"
-        android:text="breathing"
-        android:textSize="30sp"
-        android:textAllCaps="true"
-        android:textColor="#FFAB40"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_horizontal"
-        android:paddingTop="5dp"
-        android:text="LANGKAH 2 / 4"
-        android:textSize="12sp"
-        android:textAllCaps="true"
-        android:layout_below="@+id/breathingText"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:id="@+id/textView17" />
+    android:layout_marginTop="65dp"
+    android:background="@drawable/img_pp_airway_4"
+    >
 
-    <TextView
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/airway2text"
-        android:text="Apabila penderita berada dalam kondisi sadar,"
-        android:textSize="18sp"
-        android:gravity="center_vertical|center|center_horizontal"
-        android:layout_gravity="center"
-        android:textColor="#000000"
-        android:layout_below="@+id/breathingText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="39dp"
-        android:text="lakukan penanganan untuk kasus"
-        android:layout_below="@+id/airway2text"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView12" />
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonInfoADGD"
+        android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:background="@drawable/info_hijau"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="111dp"
+        android:visibility="invisible"
+        android:layout_above="@+id/lanjutkan_airway4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/lanjutkan_breathing3"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center|center_horizontal"
         android:gravity="center"
-        android:id="@+id/linearLayout4"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-        <TextView
-            android:id="@+id/info_asma"
-            android:layout_gravity="center|center_horizontal|center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAllCaps="true"
-            android:text="ASMA"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            />
-        <Button
-            android:id="@+id/buttonInfoASMA"
-            android:layout_marginLeft="10dp"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_gravity="center|center_horizontal|center_vertical"
-            android:background="@drawable/info_hijau"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center|center_horizontal"
-        android:text="Lanjutkan ke tahap selanjutnya."
-        android:id="@+id/textView13"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:gravity="bottom|center_horizontal"
-        android:id="@+id/linearLayout3"
+        android:background="@drawable/lanjutkan_icon"
+        android:layout_marginBottom="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="72dp">
-        <Button
-            android:id="@+id/breathing3"
-            android:layout_width="80dp"
-            android:layout_height="105dp"
-            android:background="@drawable/lanjutkan_icon"
-            android:layout_above="@+id/linearLayout3"
-            android:layout_alignRight="@+id/textView17"
-            android:layout_alignEnd="@+id/textView17"
-            android:onClick="pp_breathing1Yes_open" />
-    </LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:onClick="pp_breathing1Yes_open" />
 </RelativeLayout>

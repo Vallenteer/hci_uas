@@ -2,69 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="65dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/breathingText"
-        android:layout_gravity="center|center_horizontal"
-        android:paddingTop="30dp"
-        android:text="breathing"
-        android:textSize="30sp"
-        android:textAllCaps="true"
-        android:textColor="#FFAB40"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_horizontal"
-        android:paddingTop="5dp"
-        android:text="LANGKAH 2 / 4"
-        android:textSize="12sp"
-        android:textAllCaps="true"
-        android:layout_below="@+id/airwayText"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView4" />
-
-    <TextView
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/airway2text"
-        android:text="Apakah penderita berada dalam kondisi sadar?"
-        android:textSize="18sp"
-        android:gravity="center_vertical|center|center_horizontal"
-        android:layout_gravity="center"
-        android:textColor="#000000"
-        android:layout_marginTop="102dp"
-        android:layout_below="@+id/breathingText"
-        android:layout_centerHorizontal="true" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:gravity="bottom|center_horizontal"
-        android:layout_alignParentBottom="true"
+    android:layout_marginTop="65dp"
+    android:background="@drawable/img_pp_breathing_2">
+    <Button
+        android:id="@+id/breathing2Yes"
+        android:layout_width="80dp"
+        android:layout_height="105dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/ya_icon"
+        android:onClick="pp_breathing2Yes_open"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignTop="@+id/breathing2No"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="70dp">
-        <Button
-            android:id="@+id/breathing2Yes"
-            android:layout_width="80dp"
-            android:layout_height="105dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="80dp"
-            android:background="@drawable/ya_icon"
-            android:onClick="pp_breathing2Yes_open" />
-        <Button
-            android:id="@+id/breathing2No"
-            android:layout_width="80dp"
-            android:layout_height="105dp"
-            android:layout_gravity="right"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/tidak_icon"
-            android:onClick="pp_breathing2No_open" />
-    </LinearLayout>
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/breathing2No"
+        android:layout_width="80dp"
+        android:layout_height="105dp"
+        android:layout_gravity="right"
+        android:background="@drawable/tidak_icon"
+        android:onClick="pp_breathing2No_open"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp" />
+
 </RelativeLayout>
