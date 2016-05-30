@@ -95,5 +95,10 @@ public class tp_resutasi_page extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }  public void tombol_darurat_page_open(View view) {
+        //buka intent tombol darurat
+        Intent intent = new Intent(this, tombol_darurat_page.class);
+        startActivity(intent);
+
     }
 }
