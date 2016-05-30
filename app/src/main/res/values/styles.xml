@@ -10,7 +10,7 @@
     </style>
 
     <style name="whiteBG">
-        <item name="android:background">@color/background</item>
+        <item name="android:background"></item>
     </style>
 
     <style name="AppTheme.NoActionBar">
