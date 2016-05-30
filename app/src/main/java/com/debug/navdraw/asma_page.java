@@ -14,13 +14,15 @@ public class asma_page extends AppCompatActivity {
     String[] web = {
             "Bantulah penderita untuk duduk pada posisi yang nyaman.  <b>Jangan biarkan penderita berbaring.</b>",
             "Tetap tenang dan bantulah penderita untuk mengambilkan obatnya.",
-            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat."
+            "Apabila serangan menjadi lebih berat atau penderita tidak membaik, segera hubungi fasilitas kesehatan terdekat.",
+            ""
 
     } ;
     Integer[] imageId = {
             R.drawable.icon_angka_satu,
             R.drawable.icon_angka_dua,
-            R.drawable.icon_angka_tiga
+            R.drawable.icon_angka_tiga,
+            0
 
     };
 
