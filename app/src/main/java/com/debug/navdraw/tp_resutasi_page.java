@@ -63,6 +63,10 @@ public class tp_resutasi_page extends AppCompatActivity {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
             case android.R.id.home:
+                if(mp.isPlaying())
+                {
+                    mp.stop();
+                }
                 finish();
                 return true;
         }
@@ -81,22 +85,16 @@ public class tp_resutasi_page extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void audio_on  (View view) {
-        if(audio)
-        {
-            button_audio.setBackgroundResource(R.drawable.audio_on);
-            if(!mp.isPlaying()){
-                mp.start();
-            }
-            audio=false;
 
-        }
-        else {
-            button_audio.setBackgroundResource(R.drawable.audio_off);
-            if(mp.isPlaying()) {
-                mp.stop();
+        if(!mp.isPlaying()){
+                mp.start();
+                button_audio.setBackgroundResource(R.drawable.audio_on);
             }
-            audio=true;
-        }
+        else {
+                button_audio.setBackgroundResource(R.drawable.audio_off);
+                mp.pause();
+
+            }
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -111,7 +109,7 @@ public class tp_resutasi_page extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        if(mp.isPlaying()==true)
+        if(mp.isPlaying())
         {
             mp.stop();
         }
