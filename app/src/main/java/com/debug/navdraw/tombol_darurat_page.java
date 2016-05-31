@@ -135,6 +135,54 @@ public class tombol_darurat_page extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
         }
     }
+    public void call_betsaida(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:02129309999"));
+        try{
+            startActivity(intent);
+        }
+
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+        }
+    }
+    public void call_carolus(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:02154220811"));
+        try{
+            startActivity(intent);
+        }
+
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+        }
+    }
+    public void call_ass(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:0215384314"));
+        try{
+            startActivity(intent);
+        }
+
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+        }
+    }
+    public void call_siloam(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:0215460055"));
+        try{
+            startActivity(intent);
+        }
+
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+        }
+    }
 
     //API Key GMaps :  AIzaSyBfWtUxkoTrT6N6luJvdB6etsKlRTc4QHY
 
