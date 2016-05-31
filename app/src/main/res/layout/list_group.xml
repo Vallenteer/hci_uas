@@ -9,15 +9,15 @@
         android:id="@+id/group_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="25dp"
-        android:textSize="25dp" />
+        android:paddingLeft="20dp"
+        android:textSize="18dp" />
 
     <ImageView
         android:id="@+id/expand_icon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_gravity="right"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="right|center_horizontal"
         android:background="@drawable/expand_more_icon"
-        />
+        android:paddingBottom="10dp" />
 
 </LinearLayout>

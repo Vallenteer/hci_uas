@@ -83,9 +83,14 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         }
 
 
+        ImageView img_expand = (ImageView) convertView.findViewById(R.id.expand_icon);
 
         if (isExpanded){
-
+            img_expand.setBackgroundResource(R.drawable.expand_less_icon);
+        }
+        else
+        {
+            img_expand.setBackgroundResource(R.drawable.expand_more_icon);
         }
         TextView tv = (TextView) convertView.findViewById(R.id.group_name);
         tv.setText(group.getName());
