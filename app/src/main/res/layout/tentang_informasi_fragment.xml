@@ -7,19 +7,20 @@
         android:layout_width="185dp"
         android:layout_height="200dp"
         android:background="@drawable/icon_p3ku"
-        android:layout_centerHorizontal="true"/>
-    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gambar_info"/>
+
+    <ExpandableListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/lvInfo"
+        android:layout_below="@id/gambar_info"
+        android:paddingBottom="40dp"
+        android:groupIndicator="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+      >
 
-        <ExpandableListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/lvInfo"
-            android:paddingTop="200dp"
-            android:groupIndicator="@null">
-
-        </ExpandableListView>
-
-    </ScrollView>
+    </ExpandableListView>
 </RelativeLayout>

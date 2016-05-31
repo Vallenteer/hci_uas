@@ -53,7 +53,8 @@
             android:layout_height="fill_parent"
             android:id="@+id/lvExp"
             android:paddingTop="160dp"
-            android:groupIndicator="@null">
+            android:groupIndicator="@null"
+            android:paddingBottom="50dp">
 
         </ExpandableListView>
     <include
