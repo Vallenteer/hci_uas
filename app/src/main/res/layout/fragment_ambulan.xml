@@ -17,6 +17,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="33dp"
         android:layout_marginTop="160dp"
-        android:visibility="invisible"
-        android:onClick="call_118"/>
+        android:visibility="visible"
+        android:onClick="call_118"
+        android:background="@android:color/transparent" />
 </RelativeLayout>

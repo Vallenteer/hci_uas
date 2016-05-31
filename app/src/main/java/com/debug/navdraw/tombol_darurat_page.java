@@ -1,5 +1,7 @@
 package com.debug.navdraw;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -8,13 +10,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.debug.navdraw.R;
-import com.debug.navdraw.ambulan_fragment;
-import com.debug.navdraw.rumahsakit_fragment;
 
 public class tombol_darurat_page extends AppCompatActivity {
 
@@ -73,6 +72,14 @@ public class tombol_darurat_page extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
-    }
 
+
+
+    }
+    public void call_118(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:021118"));
+        startActivity(intent);
+    }
 }
