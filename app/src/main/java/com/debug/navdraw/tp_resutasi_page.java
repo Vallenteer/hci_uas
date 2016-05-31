@@ -19,7 +19,7 @@ public class tp_resutasi_page extends AppCompatActivity {
             "Baringkan penderita di atas permukaan yang datar dan keras. Berlututlah sejajar di sisi kiri atau kanan dengan dada penderita",
             "Tumpuk kedua telapak tangan Anda secara sejajar mengarah pada lengan penderita dengan posisi panggung tangan berada di atas dan letakan pada bagian tengah dada penderita.",
             "Lipat telapak tangan yang berada di atas mengarah ke bagian dalam telapak tangan dibawahnya.",
-            "Lakukan penekanan pada dada ke bawah sedalam 4-5 cm dengan tetap menjaga lengan Anda tetap tegak lurus, kemudia lepaskan tekanan.",
+            "Lakukan penekanan pada dada ke bawah sedalam 4-5 cm dengan tetap menjaga lengan Anda tetap tegak lurus, kemudian lepaskan tekanan.",
             "Terus lakukan penekanan sambil menghitung untuk menjaga jeda waktu antara penekanan tetap konstan sampai bantuan tiba.",
             ""
     } ;
