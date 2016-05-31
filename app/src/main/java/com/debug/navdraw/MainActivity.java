@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    public void open_pp (){
+    public void open_pp (View view){
         IsPageHome=false;
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight

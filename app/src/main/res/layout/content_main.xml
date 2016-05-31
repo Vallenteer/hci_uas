@@ -41,7 +41,8 @@
             android:layout_width="200dp"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:onClick="open_pp" />
+            android:onClick="open_pp"
+            android:nestedScrollingEnabled="false" />
 
     <!-- Ini bagian yang kiri -->
 
