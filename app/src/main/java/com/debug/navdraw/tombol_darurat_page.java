@@ -149,6 +149,28 @@ public class tombol_darurat_page extends AppCompatActivity {
 
     public void directCarolus(View view)
     {
-        
+        Intent intent = new Intent( Intent.ACTION_VIEW,
+                Uri.parse("https://www.google.co.id/maps/place/St.+Carolus+Hospital+Summarecon+Serpong/@-6.2546679,106.6136892,15z/data=!4m8!1m2!2m1!1scarolus+serpong!3m4!1s0x2e69fb90893fbba1:0x406e4656855a7250!8m2!3d-6.2471031!4d106.6423491?hl=en"));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK&Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+        startActivity(intent);
+    }
+
+    public void directAsobirin(View view)
+    {
+        Intent intent = new Intent( Intent.ACTION_VIEW,
+                Uri.parse("https://www.google.co.id/maps/place/Rumah+Sakit+Islam+Asshobirin/@-6.2591347,106.6493513,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69fb9f51da473d:0x5e416ce53e8a0915!8m2!3d-6.25914!4d106.65154?hl=en"));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK&Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+        startActivity(intent);
+    }
+
+    public void directSiloam(View view)
+    {
+        Intent intent = new Intent( Intent.ACTION_VIEW,
+                Uri.parse("https://www.google.co.id/maps/place/Siloam+Hospitals+Lippo+Village/@-6.2250979,106.596171,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69fc276fd19173:0xef3df4d1a093f06a!8m2!3d-6.2251032!4d106.5983597?hl=en"));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK&Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+        startActivity(intent);
     }
 }
