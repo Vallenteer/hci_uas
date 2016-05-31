@@ -308,7 +308,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    public void call_118 (){
+    /*public void call_118 (){
         //Buat nelepon
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:021118"));
@@ -318,6 +318,6 @@ public class MainActivity extends AppCompatActivity
         } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(getBaseContext(), "yourActivity is not founded", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 
 }
