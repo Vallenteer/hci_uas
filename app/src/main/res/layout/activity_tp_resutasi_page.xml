@@ -49,6 +49,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="24dp"
         android:layout_marginEnd="24dp"
+        android:paddingTop="20dp"
         android:paddingRight="10dp"
         android:onClick="audio_on" />
     <include
