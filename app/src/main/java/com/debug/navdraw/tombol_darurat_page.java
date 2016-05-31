@@ -116,4 +116,11 @@ public class tombol_darurat_page extends AppCompatActivity {
         intent.setData(Uri.parse("tel:021118"));
         startActivity(intent);
     }
+
+    public void call_119(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:021119"));
+        startActivity(intent);
+    }
 }

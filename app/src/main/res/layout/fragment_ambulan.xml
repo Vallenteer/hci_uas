@@ -20,4 +20,17 @@
         android:visibility="visible"
         android:onClick="call_118"
         android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btn_call119"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="33dp"
+        android:visibility="visible"
+        android:onClick="call_119"
+        android:background="@android:color/transparent" />
 </RelativeLayout>
