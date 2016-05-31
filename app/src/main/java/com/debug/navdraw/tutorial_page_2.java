@@ -20,4 +20,7 @@ public class tutorial_page_2 extends Activity {
         finish();
 
     }
+    public void close_page(View view){
+        finish();
+    }
 }

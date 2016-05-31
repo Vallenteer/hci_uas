@@ -24,5 +24,13 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="50dp"
         />
-
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/close_button"
+        android:background="@drawable/close_tutorial"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/lanjutkan3_button"
+        android:layout_alignEnd="@+id/lanjutkan3_button"
+        android:onClick="close_page" />
 </RelativeLayout>

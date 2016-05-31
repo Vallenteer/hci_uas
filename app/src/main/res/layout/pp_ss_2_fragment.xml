@@ -24,7 +24,7 @@
         android:layout_height="105dp"
         android:layout_gravity="right"
         android:background="@drawable/tidak_icon"
-        android:onClick="pp_ss2No_openn"
+        android:onClick="pp_ss2No_open"
         android:layout_marginRight="60dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="70dp"
