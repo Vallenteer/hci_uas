@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -112,20 +113,28 @@ public class tombol_darurat_page extends AppCompatActivity {
     }
     public void call_118(View view)
     {
-        Intent intent = new Intent(Intent.ACTION_DIAL);
+        Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:021118"));
-        startActivity(intent);
-    } public void call_119(View view)
-    {
-        Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:021119"));
-        startActivity(intent);
-    }
+        try{
+            startActivity(intent);
+        }
 
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+        }
+    }
     public void call_119(View view)
     {
-        Intent intent = new Intent(Intent.ACTION_DIAL);
+        Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:021119"));
-        startActivity(intent);
+        try{
+            startActivity(intent);
+        }
+
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+        }
     }
+
+
 }
