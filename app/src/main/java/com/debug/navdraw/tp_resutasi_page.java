@@ -33,7 +33,6 @@ public class tp_resutasi_page extends AppCompatActivity {
 
     };
     Button button_audio;
-    boolean audio=true;
     MediaPlayer mp ;
     Integer[] imageId2 = {
             0,
@@ -88,10 +87,10 @@ public class tp_resutasi_page extends AppCompatActivity {
 
         if(!mp.isPlaying()){
                 mp.start();
-                button_audio.setBackgroundResource(R.drawable.audio_on);
+                button_audio.setBackgroundResource(R.drawable.audio_off);
             }
         else {
-                button_audio.setBackgroundResource(R.drawable.audio_off);
+                button_audio.setBackgroundResource(R.drawable.audio_on);
                 mp.pause();
 
             }
