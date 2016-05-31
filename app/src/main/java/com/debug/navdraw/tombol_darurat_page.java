@@ -136,5 +136,19 @@ public class tombol_darurat_page extends AppCompatActivity {
         }
     }
 
+    //API Key GMaps :  AIzaSyBfWtUxkoTrT6N6luJvdB6etsKlRTc4QHY
 
+    public void directBethsaida(View view)
+    {
+        Intent intent = new Intent( Intent.ACTION_VIEW,
+                Uri.parse("https://www.google.co.id/maps/place/Bethsaida+Hospitals/@-6.2546947,106.6202553,17z/data=!4m15!1m9!4m8!1m0!1m6!1m2!1s0x2e69fc7a082d017f:0x212d083e3a5e9c49!2sJl+Boulevard+Raya+Gading+Serpong+Kav+29+Gading+Serpong,+Bethsaida+Hospitals,+Kec.+Tangerang,+Banten!2m2!1d106.622444!2d-6.2547!3m4!1s0x2e69fc7a082d017f:0x212d083e3a5e9c49!8m2!3d-6.2547!4d106.622444?hl=en"));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK&Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+        startActivity(intent);
+    }
+
+    public void directCarolus(View view)
+    {
+        
+    }
 }
