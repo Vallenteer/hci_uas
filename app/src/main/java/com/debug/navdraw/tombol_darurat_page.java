@@ -13,11 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +22,6 @@ public class tombol_darurat_page extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +38,6 @@ public class tombol_darurat_page extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -58,46 +45,6 @@ public class tombol_darurat_page extends AppCompatActivity {
         adapter.addFragment(new ambulan_fragment(), "AMBULANS");
         adapter.addFragment(new rumahsakit_fragment(), "RUMAH SAKIT");
         viewPager.setAdapter(adapter);
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "tombol_darurat_page Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.debug.navdraw/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "tombol_darurat_page Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.debug.navdraw/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -129,8 +76,8 @@ public class tombol_darurat_page extends AppCompatActivity {
         }
 
 
-    }
 
+    }
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
@@ -152,42 +99,33 @@ public class tombol_darurat_page extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-
-    public void tombol_darurat_page_open(View view) {
+    }  public void tombol_darurat_page_open(View view) {
         //buka intent tombol darurat
         Intent intent = new Intent(this, tombol_darurat_page.class);
         startActivity(intent);
 
     }
-
-    public void call_118(View view) {
-        Intent intent = new Intent(Intent.ACTION_CALL);
+    public void call_118(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:021118"));
-        try{
-            startActivity(intent);
-        }
-
-        catch (android.content.ActivityNotFoundException ex){
-            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
-        }
+        startActivity(intent);
+    } public void call_119(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:021119"));
+        startActivity(intent);
     }
 
-    public void call_119(View view) {
-        Intent intent = new Intent(Intent.ACTION_CALL);
+    public void call_119(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:021119"));
-        try{
-            startActivity(intent);
-        }
-
-        catch (android.content.ActivityNotFoundException ex){
-            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
-        }
+        startActivity(intent);
     }
 }
