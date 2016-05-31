@@ -67,15 +67,17 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-                if (!IsPageHome) {
+                if(fm.getBackStackEntryCount()<0) {
 
-                    ft = fm.beginTransaction();
-                    ft.replace(R.id.ux_content, new page_menu_activity());
-                    ft.commit();
-                    IsPageHome = true;
-                    getSupportActionBar().setTitle("P3KU");
+                        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                    }
+                        //ft = fm.beginTransaction();
+                    //ft.replace(R.id.ux_content, new page_menu_activity());
+                    //ft.commit();
+                    //IsPageHome = true;
+                    //getSupportActionBar().setTitle("P3KU");
                     // yang belom itu cm ngilangin highlight ke beranda,,, daku dk ketmu carana .-.
-                }
+
                 else{
                     super.onBackPressed();
                 }
@@ -124,22 +126,26 @@ public class MainActivity extends AppCompatActivity
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
         } else if (id == R.id.nav_teknik) {
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new tp_handler_activity(),"Teknik penanganan"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
         }  else if (id == R.id.nav_tutorial) {
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new tutorial_handler_activity(),"Tutorial P3KU"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
 
         } else if (id == R.id.nav_info) {
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new tentang_informasi_handler_activity(),"Informasi lainnya"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
         }
 
@@ -188,13 +194,16 @@ public class MainActivity extends AppCompatActivity
         //open airway 2
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_airway_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
+
     }
 
     public void pp_airway1Yes_open  (View view) {
         //open breathing 1
        ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_breathing_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
 
@@ -202,24 +211,28 @@ public class MainActivity extends AppCompatActivity
         //open airway 4
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_airway_4_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_airway2Yes_open  (View view) {
         //open airway 3
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_airway_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_breathing1Yes_open  (View view) {
         //open circu 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_circu_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_breathing1No_open  (View view) {
         //open breathing 2
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_breathing_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
 
@@ -227,24 +240,28 @@ public class MainActivity extends AppCompatActivity
         //open bearthing 3
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_breathing_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_breathing2No_open  (View view) {
         //open breathing 4
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_breathing_4_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_circu1Yes_open  (View view) {
         //open circu 2
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_circu_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_circu1No_open  (View view) {
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
 
@@ -252,35 +269,41 @@ public class MainActivity extends AppCompatActivity
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_2_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_ss1No_open  (View view) {
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_3_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_ss2Yes_open  (View view) {
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_4_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_ss2No_open  (View view) {
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_5_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }public void pp_ss3Yes_open  (View view) {
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_6_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void pp_ss3No_open  (View view) {
         //open SS 1
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_ss_7_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
     public void resutasi_page_open  (View view) {
@@ -308,6 +331,7 @@ public class MainActivity extends AppCompatActivity
         IsPageHome=false;
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.addToBackStack("back");
         ft.commit();
     }
 
