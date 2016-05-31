@@ -221,4 +221,8 @@ public class tombol_darurat_page extends AppCompatActivity {
         intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
         startActivity(intent);
     }
+    public void move_rumahsakit(View view)
+    {
+        viewPager.setCurrentItem(2,true);
+    }
 }

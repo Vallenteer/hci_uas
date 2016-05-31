@@ -30,4 +30,13 @@
         android:layout_alignTop="@+id/btn_call118"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/button_rumah"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="move_rumahsakit"
+        android:background="@android:color/transparent" />
 </RelativeLayout>
