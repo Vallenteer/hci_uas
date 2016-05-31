@@ -35,7 +35,7 @@
             android:layout_height="105dp"
             android:layout_gravity="right"
             android:background="@drawable/tidak_icon"
-            android:layout_marginBottom="65dp"
+            android:layout_marginBottom="70dp"
             android:onClick="pp_breathing1No_open"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
