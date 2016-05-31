@@ -4,11 +4,12 @@
     android:layout_height="match_parent"
     android:layout_marginTop="60dp">
     <ImageView
-        android:layout_width="185dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:background="@drawable/icon_p3ku"
         android:layout_centerHorizontal="true"
-        android:id="@+id/gambar_info"/>
+        android:id="@+id/gambar_info"
+        android:layout_marginTop="15dp" />
 
     <ExpandableListView
         android:layout_width="match_parent"

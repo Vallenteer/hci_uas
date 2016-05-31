@@ -38,7 +38,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="100dp"
         android:textColor="#ffffff"
         android:gravity="bottom"
         android:layout_marginLeft="20dp" />
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:id="@+id/lvExp"
-            android:paddingTop="160dp"
+            android:paddingTop="170dp"
             android:groupIndicator="@null"
             android:paddingBottom="50dp">
 
