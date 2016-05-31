@@ -304,16 +304,11 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    /*public void call_118 (){
-        //Buat nelepon
-        Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:021118"));
-        try {
-
-            startActivity(intent);
-        } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(getBaseContext(), "yourActivity is not founded", Toast.LENGTH_SHORT).show();
-        }
-    }*/
+    public void open_pp (){
+        IsPageHome=false;
+        ft = fm.beginTransaction();
+        ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+        ft.commit();
+    }
 
 }

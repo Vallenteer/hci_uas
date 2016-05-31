@@ -76,6 +76,7 @@ public class tombol_darurat_page extends AppCompatActivity {
 
 
     }
+
     public void call_118(View view)
     {
         Intent intent = new Intent(Intent.ACTION_DIAL);
