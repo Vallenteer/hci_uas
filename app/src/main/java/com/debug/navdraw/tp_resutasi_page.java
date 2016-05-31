@@ -1,6 +1,7 @@
 package com.debug.navdraw;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,7 @@ public class tp_resutasi_page extends AppCompatActivity {
     };
     Button button_audio;
     boolean audio=true;
+    MediaPlayer mp ;
     Integer[] imageId2 = {
             0,
             0,// 0 kalau gambar kosong
@@ -47,7 +49,7 @@ public class tp_resutasi_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tp_resutasi_page);
-
+        mp = MediaPlayer.create(this, R.raw.rjp);
         button_audio=(Button) findViewById(R.id.button_audio);
         ListTPAdapter adapter = new ListTPAdapter(tp_resutasi_page.this, web, imageId,imageId2);
         list=(ListView)findViewById(R.id.listview_resultasi);
@@ -82,11 +84,17 @@ public class tp_resutasi_page extends AppCompatActivity {
         if(audio)
         {
             button_audio.setBackgroundResource(R.drawable.audio_on);
+            if(!mp.isPlaying()){
+                mp.start();
+            }
             audio=false;
 
         }
         else {
             button_audio.setBackgroundResource(R.drawable.audio_off);
+            if(mp.isPlaying()) {
+                mp.stop();
+            }
             audio=true;
         }
     }
@@ -99,6 +107,15 @@ public class tp_resutasi_page extends AppCompatActivity {
         //buka intent tombol darurat
         Intent intent = new Intent(this, tombol_darurat_page.class);
         startActivity(intent);
+
+    }
+    @Override
+    public void onBackPressed() {
+        if(mp.isPlaying()==true)
+        {
+            mp.stop();
+        }
+        super.onBackPressed();
 
     }
 }
