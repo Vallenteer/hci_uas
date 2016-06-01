@@ -42,7 +42,7 @@ public class tentang_informasi_handler_activity extends Fragment {
         ExpAdapter = new ExpandableListAdapter(getActivity(), ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
 
-        ((MainActivity)getActivity()).getSupportActionBar().setTitle("Informasi lainya");
+        ((MainActivity)getActivity()).getSupportActionBar().setTitle("Informasi lainnya");
         return view;
     }
 

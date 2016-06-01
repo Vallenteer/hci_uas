@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,25 +21,32 @@ import java.util.List;
 public class search_function extends AppCompatActivity {
     ListView list;
     String[] web;
-    List<String> listA;
+
+    List<String> listA,listKosong;
     String[] array = {
             "Asma",
             "Gigitan/Sengatan",
-            "Tersedak"
+            "Tersedak",
+            "Epilepsi",
+            "Keracunan",
+            "Patah Tulang",
+            "Heat Stroke",
+            "Hipotemia",
+            "Luka Bakar",
+            "Terkilir"
     } ;
     Integer[] imageId = {
-            0,0,0
+            0,0,0,0,0,0,0,0,0,0
     };
     EditText editText;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_function);
-
+        web=listKosong.toArray(new String[0]);
         editText=(EditText)findViewById(R.id.txtsearch);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        web=array;
         listA = new ArrayList<String>(Arrays.asList(array));
         initList();
         editText.addTextChangedListener(new TextWatcher() {
@@ -110,6 +118,9 @@ public class search_function extends AppCompatActivity {
                     //based on item add info to intent
                     startActivity(intent);
 
+                }else
+                {
+                    Toast.makeText(search_function.this,"Unavailable",Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -117,7 +128,7 @@ public class search_function extends AppCompatActivity {
         });
     }
     public void initList() {
-        web=array;
+        web=listKosong.toArray(new String[0]);
         listA = new ArrayList<String>(Arrays.asList(array));
         ListAsmaAdapter adapter = new ListAsmaAdapter(search_function.this, web, imageId);
         list=(ListView)findViewById(R.id.listsearch);
@@ -147,6 +158,10 @@ public class search_function extends AppCompatActivity {
                     //based on item add info to intent
                     startActivity(intent);
 
+                }
+                else
+                {
+                    Toast.makeText(search_function.this,"Unavailable",Toast.LENGTH_LONG).show();
                 }
             }
 

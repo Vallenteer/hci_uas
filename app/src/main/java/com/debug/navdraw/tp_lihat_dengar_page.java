@@ -16,13 +16,15 @@ public class tp_lihat_dengar_page extends AppCompatActivity {
     String[] web = {
             "<b>Lihat</b><br> Lihat apakah dada penderita jelas naik dan turun atau mengembang saat nafas",
             "<b>Dengar</b><br> Dengarkan apakah ada pernafasan dari hidung atau mulut penderita.",
-            "<b>Rasakan</b><br> Rasakan apakah ada hembusan nafas terhadap sisi wajah Anda"
+            "<b>Rasakan</b><br> Rasakan apakah ada hembusan nafas terhadap sisi wajah Anda",
+            ""
 
     } ;
     Integer[] imageId = {
             R.drawable.icon_angka_satu,
             R.drawable.icon_angka_dua,
-            R.drawable.icon_angka_tiga
+            R.drawable.icon_angka_tiga,
+            0
 
     };
 

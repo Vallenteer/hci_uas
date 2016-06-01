@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new page_menu_activity());
         ft.commit();
-
         IsPageHome=true;
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -70,14 +69,22 @@ public class MainActivity extends AppCompatActivity
         } else {
                 if(fm.getBackStackEntryCount()<0) {
 
-                        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                    if(IsPageHome)
+                        {
+                            fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                        }
+                    else
+                    {
+                        ft = fm.beginTransaction();
+                        ft.replace(R.id.ux_content, new page_menu_activity());
+                        ft.commit();
+                        IsPageHome = true;
+                        //getSupportActionBar().setTitle("P3KU");
+
                     }
-                        //ft = fm.beginTransaction();
-                    //ft.replace(R.id.ux_content, new page_menu_activity());
-                    //ft.commit();
-                    //IsPageHome = true;
-                    //getSupportActionBar().setTitle("P3KU");
-                    // yang belom itu cm ngilangin highlight ke beranda,,, daku dk ketmu carana .-.
+
+                }
+
 
                 else{
                     super.onBackPressed();
@@ -124,7 +131,7 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_pemeriksaan) {
-            IsPageHome=false;
+            IsPageHome=true;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
             ft.addToBackStack("back");
@@ -326,7 +333,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void open_pp (View view){
-        IsPageHome=false;
+        IsPageHome=true;
         ft = fm.beginTransaction();
         ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
         ft.addToBackStack("back");
