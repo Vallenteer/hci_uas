@@ -24,7 +24,7 @@
         android:gravity="center"
         android:background="@drawable/lanjutkan_icon"
         android:onClick="pp_airway1Yes_open"
-        android:layout_marginBottom="65dp"
+        android:layout_marginBottom="70dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true" />
 </RelativeLayout>

@@ -31,6 +31,7 @@ public class tp_lihat_dengar_page extends AppCompatActivity {
     Integer[] imageId2 = {
             R.drawable.illustrasi_ldr,// 0 kalau gambar kosong
             0,
+            0,
             0
 
     };

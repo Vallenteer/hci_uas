@@ -1,9 +1,8 @@
 package com.debug.navdraw;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.MenuItem;
@@ -18,11 +17,12 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class search_function extends AppCompatActivity {
+public class search_function extends Activity {
     ListView list;
     String[] web;
 
-    List<String> listA,listKosong;
+    List<String> listA;
+    String[] listKosong={""};
     String[] array = {
             "Asma",
             "Gigitan/Sengatan",
@@ -42,11 +42,11 @@ public class search_function extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_function);
-        web=listKosong.toArray(new String[0]);
+        web=listKosong;
         editText=(EditText)findViewById(R.id.txtsearch);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //ActionBar actionBar = getSupportActionBar();
+        //actionBar.setHomeButtonEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
         listA = new ArrayList<String>(Arrays.asList(array));
         initList();
         editText.addTextChangedListener(new TextWatcher() {
@@ -128,7 +128,7 @@ public class search_function extends AppCompatActivity {
         });
     }
     public void initList() {
-        web=listKosong.toArray(new String[0]);
+        web=listKosong;
         listA = new ArrayList<String>(Arrays.asList(array));
         ListAsmaAdapter adapter = new ListAsmaAdapter(search_function.this, web, imageId);
         list=(ListView)findViewById(R.id.listsearch);

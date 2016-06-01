@@ -67,28 +67,29 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-                if(fm.getBackStackEntryCount()<0) {
-
-                    if(IsPageHome)
-                        {
-                            fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                        }
-                    else
-                    {
-                        ft = fm.beginTransaction();
-                        ft.replace(R.id.ux_content, new page_menu_activity());
-                        ft.commit();
-                        IsPageHome = true;
-                        //getSupportActionBar().setTitle("P3KU");
-
-                    }
-
+                if(IsPageHome)
+                {
+                    finish();
+                    //super.onBackPressed();
                 }
+                else if(fm.getBackStackEntryCount()<0)
+                {
 
+                    fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                }
+                else
+                {
 
-                else{
                     super.onBackPressed();
+                    //ft = fm.beginTransaction();
+                    //ft.replace(R.id.ux_content, new page_menu_activity());
+                    //ft.commit();
+                    //IsPageHome = true;
+                    //getSupportActionBar().setTitle("P3KU");
+
                 }
+
+
         }
     }
 
@@ -131,7 +132,7 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_pemeriksaan) {
-            IsPageHome=true;
+            IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new pp_airway_1_activity(),"Pemeriksaan penderita"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
             ft.addToBackStack("back");
@@ -140,17 +141,20 @@ public class MainActivity extends AppCompatActivity
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new tp_handler_activity(),"Teknik penanganan"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
         }  else if (id == R.id.nav_tutorial) {
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new tutorial_handler_activity(),"Tutorial P3KU"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
 
         } else if (id == R.id.nav_info) {
             IsPageHome=false;
             ft = fm.beginTransaction();
             ft.replace(R.id.ux_content, new tentang_informasi_handler_activity(),"Informasi lainnya"); // harusna ganti ke handler menunya, penamaan ini cuma buat highlight
+            ft.addToBackStack("back");
             ft.commit();
         }
 

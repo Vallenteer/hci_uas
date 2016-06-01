@@ -26,7 +26,7 @@
         android:layout_gravity="bottom|center|center_horizontal"
         android:gravity="center"
         android:background="@drawable/lanjutkan_icon"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="70dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="pp_breathing1Yes_open" />
