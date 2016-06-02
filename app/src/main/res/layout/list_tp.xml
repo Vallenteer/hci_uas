@@ -5,7 +5,7 @@
     <TableRow>
         <ImageView
             android:id="@+id/id_angka_dahu"
-            android:padding="8dp"
+            android:paddingTop="15dp"
             android:layout_marginLeft="10dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
