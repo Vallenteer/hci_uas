@@ -5,16 +5,16 @@
     android:layout_marginTop="65dp"
     android:background="@drawable/img_pp_airway_3">
 
-        <Button
-            android:id="@+id/buttonInfoTersedak"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center|center_horizontal|center_vertical"
-            android:background="@drawable/info_hijau"
-            android:layout_above="@+id/lanjutkan_airway3"
-            android:layout_toRightOf="@+id/lanjutkan_airway3"
-            android:layout_marginBottom="122dp"
-            android:visibility="invisible" />
+    <Button
+        android:id="@+id/buttonInfoTersedak"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/lanjutkan_airway3"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginBottom="122dp"
+        android:layout_toRightOf="@+id/lanjutkan_airway3"
+        android:background="@drawable/info_hijau"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/lanjutkan_airway3"
