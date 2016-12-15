@@ -7,14 +7,14 @@
 
         <Button
             android:id="@+id/buttonInfoLDR"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/breathing1No"
+            android:layout_alignRight="@+id/breathing1No"
+            android:layout_centerVertical="true"
             android:layout_gravity="center|center_horizontal|center_vertical"
             android:background="@android:color/transparent"
             android:onClick="pop_2_open"
-            android:layout_centerVertical="true"
-            android:layout_alignRight="@+id/breathing1No"
-            android:layout_alignEnd="@+id/breathing1No"
             android:visibility="visible" />
 
 

@@ -8,17 +8,17 @@
 
     <Button
         android:id="@+id/buttonInfoADGD"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginBottom="34dp"
         android:background="@drawable/info_hijau"
-        android:layout_marginRight="52dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="111dp"
         android:visibility="invisible"
-        android:layout_above="@+id/lanjutkan_airway4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_above="@+id/lanjutkan_breathing3"
+        android:layout_alignLeft="@+id/lanjutkan_breathing3"
+        android:layout_alignStart="@+id/lanjutkan_breathing3"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
     <Button
         android:id="@+id/lanjutkan_breathing3"
         android:layout_width="80dp"
