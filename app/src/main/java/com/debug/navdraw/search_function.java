@@ -58,17 +58,23 @@ public class search_function extends Activity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int
                     count) {
-                if(s.toString().equals("")){
                     // reset listview
+                    if (s.toString().equals(""))
+                    {
+                        web=new String[0];
+                        return;
+                    }
+
+
                     initList();
-                }
-                else{
+
+
                     // perform search
-                    for (int i = 0; i <listA.size(); i++)
+                    for (int i = 0; i <listA.size();)
                     {
                         if (listA.get(i).toLowerCase().contains(s.toString().toLowerCase()))
                         {
-
+                            i++;
                         }
                         else
                         {
@@ -78,7 +84,7 @@ public class search_function extends Activity {
                         web=listA.toArray(new String[0]);
                     }
                     initList_search();
-                }
+
             }
             @Override
             public void afterTextChanged(Editable s) {
