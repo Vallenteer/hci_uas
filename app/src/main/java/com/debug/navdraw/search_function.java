@@ -25,15 +25,15 @@ public class search_function extends Activity {
     String[] listKosong={""};
     String[] array = {
             "Asma",
-            "Gigitan/Sengatan",
-            "Tersedak",
             "Epilepsi",
-            "Keracunan",
-            "Patah Tulang",
+            "Gigitan/Sengatan",
             "Heat Stroke",
             "Hipotemia",
+            "Keracunan",
             "Luka Bakar",
-            "Terkilir"
+            "Patah Tulang",
+            "Terkilir",
+            "Tersedak",
     } ;
     Integer[] imageId = {
             0,0,0,0,0,0,0,0,0,0
@@ -82,6 +82,7 @@ public class search_function extends Activity {
                             //web.;
                         }
                         web=listA.toArray(new String[0]);
+
                     }
                     initList_search();
 
